@@ -14,18 +14,18 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/Jun-blog/',
+  base: '/',
   lang: 'zh-CN',
   locales: {
     '/': {
       title: 'Jun\'s Blog',
       lang: 'zh-CN',
-      description: 'Jun\'s Blog Description',
+      description: 'Discover. Share. Ignite.',
     },
     '/en/': {
       title: 'Jun\'s Blog',
       lang: 'en-US',
-      description: 'Jun\'s Blog Description',
+      description: 'Discover. Share. Ignite.',
     },
   },
 
@@ -41,7 +41,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+    // hostname: 'https://blog.junyuanhe.com',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
