@@ -7,9 +7,9 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: A simple, feature-rich, document & blog
+      name: Jun's Blog
+      tagline: Discover. Share. Ignite.
+      text: Hi, I'm Jun. Math major, Geeker, Physics lover, and robotics enthusiast.
       actions:
         -
           theme: brand

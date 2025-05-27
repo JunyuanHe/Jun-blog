@@ -60,7 +60,7 @@ export default defineThemeConfig({
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
         name: 'Jun\'s Blog',
-        description: 'Jun\'s Blog Description',
+        description: 'Discover. Share. Ignite.',
         // circle: true,
         // location: '',
         // organization: '',
@@ -86,8 +86,8 @@ export default defineThemeConfig({
        */
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'Jun&#x27;s Blog',
-        description: 'Jun&#x27;s Blog Description',
+        name: 'Jun\'s Blog',
+        description: 'Discover. Share. Ignite.',
         // circle: true,
         // location: '',
         // organization: '',

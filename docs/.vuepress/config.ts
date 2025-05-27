@@ -22,11 +22,11 @@ export default defineUserConfig({
       lang: 'zh-CN',
       description: 'Discover. Share. Ignite.',
     },
-    // '/en/': {
-    //   title: 'Jun\'s Blog',
-    //   lang: 'en-US',
-    //   description: 'Discover. Share. Ignite.',
-    // },
+    '/en/': {
+      title: 'Jun\'s Blog',
+      lang: 'en-US',
+      description: 'Discover. Share. Ignite.',
+    },
   },
 
   head: [
