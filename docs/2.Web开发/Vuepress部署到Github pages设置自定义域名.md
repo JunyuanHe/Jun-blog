@@ -21,6 +21,7 @@ Github中在设置-Pages中指定了自定义域名，但每次Vuepress通过Git
 ```
 mycustomdomain.com
 ```
+
 这样，每次vuepress build的时候，该文件就会被复制到`/docs/.vuepress/dist`文件夹下，Github在部署的时候便不会删除原有的CNAME. 
 
 另外，在`.github/workflows/deploy.yml'中增加如下CNAME内容
