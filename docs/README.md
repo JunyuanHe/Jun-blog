@@ -16,6 +16,10 @@ config:
           text: 博客
           link: /blog/
         -
+          theme: sponsor
+          text: 网站
+          link: https://www.junyuanhe.com/
+        -
           theme: alt
           text: Github →
           link: https://github.com/JunyuanHe

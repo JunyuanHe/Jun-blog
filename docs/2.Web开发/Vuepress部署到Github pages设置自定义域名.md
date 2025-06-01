@@ -1,5 +1,8 @@
 ---
 title: Vuepress部署到Github pages设置自定义域名
+tags: 
+  - Vuepress
+  - Github pages
 createTime: 2025/05/27 13:58:47
 permalink: /article/3i6eeadd/
 ---

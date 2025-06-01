@@ -1,6 +1,8 @@
 ---
-title: Copy on to web server from local machine
-createTime: 2025/05/27 14:26:59
+title: Copy onto web server from local machine
+tags:
+  - Linux
+createTime: 2025/03/04 21:34:04
 permalink: /article/vdl76kbr_en/
 ---
 

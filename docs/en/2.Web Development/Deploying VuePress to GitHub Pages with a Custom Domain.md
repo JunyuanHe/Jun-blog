@@ -1,5 +1,8 @@
 ---
 title: Deploying VuePress to GitHub Pages with a Custom Domain
+tags: 
+  - Vuepress
+  - Github pages
 createTime: 2025/05/27 13:58:47
 permalink: /article/3i6eeadd_en/
 
