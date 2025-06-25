@@ -1,29 +1,29 @@
 :root {
   /** 主题颜色 */
 
-  /*
+  
   --vp-c-brand-1: #5086a1;
   --vp-c-brand-2: #6aa1b7;
   --vp-c-brand-3: #8cccd5;
   --vp-c-brand-soft: rgba(131, 208, 218, 0.314);
-  */
+ 
 
   /** 背景颜色 */
 
-  /*
+  
   --vp-c-bg: #fff;
   --vp-c-bg-alt: #f6f6f7;
   --vp-c-bg-elv: #fff;
   --vp-c-bg-soft: #f6f6f7;
-  */
+ 
 
   /** 文本颜色 */
 
-  /*
+  
   --vp-c-text-1: rgba(60, 60, 67);
   --vp-c-text-2: rgba(60, 60, 67, 0.78);
   --vp-c-text-3: rgba(60, 60, 67, 0.56);
-  */
+ 
 }
 
 /** 深色模式 */
@@ -47,4 +47,13 @@
   --vp-c-text-2: rgba(235, 235, 245, 0.6);
   --vp-c-text-3: rgba(235, 235, 245, 0.38);
   */
+}
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, var(--vp-c-purple-1) 30%, var(--vp-c-brand-2));
+  --vp-home-hero-tagline: var(--vp-c-text-2);
+  --vp-home-hero-text: var(--vp-c-text-1);
+  --vp-home-hero-image-background-image: linear-gradient(45deg, var(--vp-c-brand-soft) 50%, var(--vp-c-brand-2) 50%);
+  --vp-home-hero-image-filter: blur(60px);
 }

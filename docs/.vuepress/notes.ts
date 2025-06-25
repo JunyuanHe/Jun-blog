@@ -35,6 +35,12 @@ const zhDemoNote = defineNoteConfig({
   // sidebar: 'auto',
 })
 
+const zhRobDiy = defineNoteConfig({
+  dir: 'robdiy',
+  link: '/robdiy',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -43,7 +49,7 @@ const zhDemoNote = defineNoteConfig({
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhDemoNote],
+  notes: [zhDemoNote, zhRobDiy],
 })
 
 /* =================== locale: en-US ======================= */
