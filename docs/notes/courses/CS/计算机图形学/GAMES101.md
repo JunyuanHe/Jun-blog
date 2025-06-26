@@ -1,5 +1,5 @@
 ---
-title: GAMES101
+title: GAMES101 (GAMES系列课程)
 createTime: 2025/06/26 11:36:30
 permalink: /courses/cd5tufap/
 ---
