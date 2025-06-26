@@ -7,14 +7,15 @@
 import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export const zhNavbar = defineNavbarConfig([
-  { text: '首页', link: '/' },
-  { text: '博客', link: '/blog/' },
-  { text: '标签', link: '/blog/tags/' },
-  { text: '归档', link: '/blog/archives/' },
+  { text: '首页', link: '/', icon: 'carbon:home' },
+  { text: '博客', link: '/blog/', icon: 'carbon:blog' },
+  { text: '标签', link: '/blog/tags/', icon: 'carbon:tag' },
+  { text: '归档', link: '/blog/archives/', icon: 'carbon:archive' },
   { text: '自学路线', 
+    icon: 'gis:map-route', 
     items: [
-      { text: '机器人自学指南', link: '/notes/robdiy/README.md' },
-      { text: '连接更大的图景', link: '/notes/courses/README.md' },
+      { text: '机器人自学指南', link: '/notes/robdiy/README.md', icon: 'mage:robot-wink' },
+      { text: '连接更大的图景', link: '/notes/courses/README.md', icon: 'mdi:book-open-page-variant-outline' },
     ]
   },
   // {
