@@ -1,0 +1,20 @@
+/* .vp-sidebar-item.level-0 .text {
+  font-weight: 700 !important;
+  color: var(--vp-c-text-1);
+} */
+
+.vp-sidebar-item.level-2 .text {
+  font-weight: 400 !important;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.vp-sidebar-item.level-3 .text,
+.vp-sidebar-item.level-4 .text,
+.vp-sidebar-item.level-5 .text {
+  font-weight: 300 !important;
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  line-height: 18px;
+}

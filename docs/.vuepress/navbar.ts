@@ -11,13 +11,18 @@ export const zhNavbar = defineNavbarConfig([
   { text: '博客', link: '/blog/' },
   { text: '标签', link: '/blog/tags/' },
   { text: '归档', link: '/blog/archives/' },
-  { text: '自学路线', link: '/notes/robdiy/README.md' },
-  {
-    text: '笔记',
+  { text: '自学路线', 
     items: [
-      { text: '示例', link: '/notes/demo/README.md' },
+      { text: '机器人自学指南', link: '/notes/robdiy/README.md' },
+      { text: '其它课程', link: '/notes/courses/README.md' },
     ]
   },
+  // {
+  //   text: '笔记',
+  //   items: [
+  //     { text: '示例', link: '/notes/demo/README.md' },
+  //   ]
+  // },
 ])
 
 export const enNavbar = defineNavbarConfig([
