@@ -14,7 +14,7 @@ export const zhNavbar = defineNavbarConfig([
   { text: '自学路线', 
     items: [
       { text: '机器人自学指南', link: '/notes/robdiy/README.md' },
-      { text: '其它课程', link: '/notes/courses/README.md' },
+      { text: '连接更大的图景', link: '/notes/courses/README.md' },
     ]
   },
   // {
