@@ -4,7 +4,7 @@ createTime: 2025/06/26 16:58:41
 permalink: /courses/wt5p0z51/
 ---
 
-::: tip
+::: info
 CMU 15-362/662 与 CMU 15-462/662 是同一个课程
 :::
 
