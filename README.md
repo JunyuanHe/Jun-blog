@@ -1,42 +1,64 @@
-# jun's-blog
+# 📝 Jun's Blog
 
-The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+Welcome to **Jun's Blog** — a personal blog site where I share thoughts, tutorials, and notes on programming, robotics, mathematics, and life.
 
-## Install
+Built with ❤️ on top of an open-source theme [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) and published using GitHub Pages.
 
-```sh
-pnpm i
-```
+---
 
-## Usage
+## 🌐 Visit
 
-```sh
-# start dev server
-pnpm docs:dev
-# build for production
-pnpm docs:build
-# preview production build in local
-pnpm docs:preview
-# update vuepress and theme
-pnpm vp-update
-```
+👉 [https://blog.junyuanhe.com](https://blog.junyuanhe.com)
 
-## Deploy to GitHub Pages
+---
 
-The plume theme has been created with GitHub Actions: `.github/workflows/docs-deploy.yml`. You also need to make the following settings in the GitHub repository:
+## ✨ Features
 
-- [ ] `settings > Actions > General`, Scroll to the bottom of the page, under `Workflow permissions`, check `Read and write permissions`, and click the save button.
+- Clean, responsive layout
+- Written in Markdown
+- Syntax highlighting for code
+- Easy content management
+- Open-source structure with custom content license
 
-- [ ] `settings > Pages`, In `Build and deployment`, select `Deploy from a branch` for `Source`, choose `gh-pages` for `Branch`, and click the save button.
-  (The `gh-pages` branch may not exist upon first creation. You can complete the above setup first, push the code to the main branch, wait for `github actions` to finish, and then proceed with the setup.)
+---
 
-- [ ] Modify the `base` option in `docs/.vuepress/config.ts`:
-  - If you are planning to deploy to `https://<USERNAME>.github.io/`, you can skip this step as `base` defaults to `"/"`.
-  - If you are planning to deploy to `https://<USERNAME>.github.io/<REPO>/`, meaning your repository URL is `https://github.com/<USERNAME>/<REPO>`, set `base` to `"/<REPO>/"`.
+## 🛠️ Tech Stack
 
-To customize a domain name, please refer to [Github Pages](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+- Static site generator: [vuepress](https://vuepress.vuejs.org/)
+- Theme: Based on [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+- Deployment: GitHub Pages
 
-## Documents
+---
 
-- [vuepress](https://vuepress.vuejs.org/)
-- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
+## 🧩 License
+
+### 🔧 Code
+
+The code in this repository is licensed under the [MIT License](./LICENSE).  
+It is based on the [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume), also licensed under MIT.
+
+### 📝 Content
+
+All blog posts and written materials under the `docs/` directory are licensed under the  
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+© 2025 Junyuan He
+
+Please respect the difference between code and content licensing. 🙏
+
+---
+
+## 🤝 Contributing
+
+This is a personal blog, but feedback, issues, and suggestions are welcome!  
+Feel free to open an issue or submit a pull request.
+
+---
+
+## 📬 Contact
+
+You can reach me via:
+
+- Email: junyuanhe01@gmail.com
+- GitHub: [JunyuanHe](https://github.com/JunyuanHe)
+

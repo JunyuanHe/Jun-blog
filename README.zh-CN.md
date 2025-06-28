@@ -1,42 +1,63 @@
-# jun-s-blog
+# 📝 Jun's Blog
 
-网站使用 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建生成。
+欢迎来到 **Jun's Blog** —— 这是我的个人博客网站，用于分享我在编程、机器人、数学以及生活方面的思考、教程和笔记。
 
-## Install
+本博客基于开源主题 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建，并通过 GitHub Pages 发布。
 
-```sh
-pnpm i
-```
+---
 
-## Usage
+## 🌐 访问地址
 
-```sh
-# 启动开发服务
-pnpm docs:dev
-# 构建生产包
-pnpm docs:build
-# 本地预览生产服务
-pnpm docs:preview
-# 更新 vuepress 和主题
-pnpm vp-update
-```
+👉 [https://blog.junyuanhe.com](https://blog.junyuanhe.com)
 
-## 部署到 GitHub Pages
+---
 
-主题已创建 github actions: `.github/workflows/docs-deploy.yml`，你还需要在 github 仓库中进行以下设置：
+## ✨ 特性
 
-- [ ] `settings > Actions > General`，拉到页面底部，在 `Workflow permissions` 下，勾选 `Read and write permissions`，并点击保存按钮
+- 简洁、自适应的页面布局
+- 使用 Markdown 编写
+- 支持代码语法高亮
+- 内容管理便捷
+- 开源结构，内容使用自定义许可协议
 
-- [ ] `settings > Pages`, 在 `Build and deployment` 中，`Source` 选择 `Deploy from a branch`, `Branch` 选择 `gh-pages`，并点击保存按钮
-  (首次创建可能没有 `gh-pages`分支，你可以先完成上面的设置后，推送一次代码到主分支，等待 `github actions` 完成后再进行设置)
+---
 
-- [ ] 修改 `docs/.vuepress/config.ts` 中的 `base` 选项：
-  - 如果你准备发布到 `https://<USERNAME>.github.io/` ，你可以省略这一步，因为 `base` 默认就是 `"/"` 。
-  - 如果你准备发布到 `https://<USERNAME>.github.io/<REPO>/` ，也就是说你的仓库地址是 `https://github.com/<USERNAME>/<REPO>` ，则将 `base` 设置为 `"/<REPO>/"`。
+## 🛠️ 技术栈
 
-如需要自定义域名，请查看 [Github Pages 文档](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+- 静态网站生成器：[VuePress](https://vuepress.vuejs.org/)
+- 博客主题：[vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+- 部署方式：GitHub Pages
 
-## 文档
+---
 
-- [vuepress](https://vuepress.vuejs.org/)
-- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
+## 🧩 许可协议
+
+### 🔧 代码部分
+
+本仓库中的代码使用 [MIT License](./LICENSE) 开源。  
+基于 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建，该主题同样采用 MIT 许可。
+
+### 📝 内容部分
+
+`docs/` 目录下的所有博客文章及其他文字材料采用  
+[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) 进行授权。
+
+© 2025 何俊源
+
+请尊重代码和内容使用许可之间的区别 🙏
+
+---
+
+## 🤝 贡献
+
+本博客是个人项目，但欢迎任何反馈、建议和问题报告！  
+你可以随时提交 issue 或发起 pull request。
+
+---
+
+## 📬 联系方式
+
+你可以通过以下方式联系我：
+
+- 邮箱：junyuanhe01@gmail.com
+- GitHub: [JunyuanHe](https://github.com/JunyuanHe)
