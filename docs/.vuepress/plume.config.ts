@@ -42,11 +42,7 @@ export default defineThemeConfig({
   /* 站点页脚 */
   footer: {
     message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a> ',
-    copyright: `
-    © 2025 Junyuan He. Content is licensed under 
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>. 
-    Code is released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
-    `,
+    copyright: '© 2025 Junyuan He. All rights reserved.',
   },
 
   /* 过渡动画 @see https://theme-plume.vuejs.press/config/basic/#transition */

@@ -13,6 +13,8 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
+// const isProd = process.env.NODE_ENV === 'production'
+
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
@@ -184,7 +186,7 @@ export default defineUserConfig({
      * 资源链接替换
      * @see https://theme-plume.vuejs.press/guide/features/replace-assets/
      */
-    // replaceAssets: 'https://cdn.example.com',
+    // replaceAssets: isProd ? 'https://cdn.jsdelivr.net/gh/Junyuanhe/Jun-blog@gh-pages/' : false,
 
     /**
      * 加密功能
