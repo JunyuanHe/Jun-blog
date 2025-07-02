@@ -43,11 +43,46 @@ export default defineUserConfig({
   port: 12345, // 本地开发端口，默认 8080
 
   extendsBundlerOptions(bundlerOptions, app) {
-    addViteOptimizeDepsInclude(bundlerOptions, app, '@simonwep/pickr')
-    addViteSsrExternal(bundlerOptions, app, '@simonwep/pickr')
+    addViteOptimizeDepsInclude(bundlerOptions, app, [
+      'vue',
+      'vue-router',
+      '@vueuse/core'
+    ])
+    // addViteSsrExternal(bundlerOptions, app, 'shiki')
   },
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      build: {
+        // target: 'esnext',     // Modern browsers
+        minify: 'terser',     // Better than esbuild
+        // cssMinify: false, // Disable CSS minification to test
+        // terserOptions: {
+        //   format: {
+        //     comments: false,
+        //   },
+        //   compress: {
+        //     // Disable unsafe optimizations that might break CSS
+        //     unsafe: false,
+        //     unsafe_arrows: false,
+        //     unsafe_methods: false,
+        //   }
+        // },
+        // terserOptions: {
+        //   compress: {
+        //     drop_console: true, // Remove console logs
+        //     pure_funcs: ['console.debug'] // Keep only debug
+        //   }
+        // },
+        // sourcemap: false,     // Disable source maps for production
+        // cssCodeSplit: true,
+        // chunkSizeWarningLimit: 1500,
+      },
+      // ssr: {
+      //   noExternal: ['@vuepress/plugin-search']
+      // }
+    }
+  }),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
