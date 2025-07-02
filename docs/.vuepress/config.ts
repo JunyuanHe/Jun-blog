@@ -9,6 +9,7 @@
  * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会被覆盖
  */
 
+import { addViteOptimizeDepsInclude, addViteSsrExternal } from '@vuepress/helper'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
@@ -37,6 +38,11 @@ export default defineUserConfig({
   ],
 
   port: 12345, // 本地开发端口，默认 8080
+
+  extendsBundlerOptions(bundlerOptions, app) {
+    addViteOptimizeDepsInclude(bundlerOptions, app, '@simonwep/pickr')
+    addViteSsrExternal(bundlerOptions, app, '@simonwep/pickr')
+  },
 
   bundler: viteBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
