@@ -54,7 +54,7 @@ export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: {
       build: {
-        // target: 'esnext',     // Modern browsers
+        target: 'esnext',     // Modern browsers
         minify: 'terser',     // Better than esbuild
         // cssMinify: false, // Disable CSS minification to test
         // terserOptions: {
