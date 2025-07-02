@@ -35,7 +35,10 @@ export default defineUserConfig({
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
+    ['link', { rel: 'preload', href: '/styles/main.css', as: 'style' }],
+    ['link', { rel: 'modulepreload', href: '/app.js' }],
   ],
+
 
   port: 12345, // 本地开发端口，默认 8080
 
