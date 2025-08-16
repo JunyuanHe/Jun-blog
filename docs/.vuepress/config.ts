@@ -23,7 +23,7 @@ export default defineUserConfig({
     '/': {
       title: 'Jun\'s Blog',
       lang: 'zh-CN',
-      description: 'Discover. Share. Ignite.',
+      description: '探索未知，分享所思，点亮梦想',
     },
     '/en/': {
       title: 'Jun\'s Blog',

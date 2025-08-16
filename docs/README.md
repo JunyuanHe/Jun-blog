@@ -8,8 +8,9 @@ config:
     background: tint-plate
     hero:
       name: Jun's Blog
-      tagline: Discover. Share. Ignite.
-      text: Hi, I'm Jun. Math major, Geeker, Physics lover, and robotics enthusiast.
+      tagline: 追光 · 同行 · 远航
+      # tagline: 探索未知，分享所思，点亮梦想
+      text: 嗨，我是君。数学专业，极客一枚，热爱物理与机器人。
       actions:
         -
           theme: brand

@@ -60,7 +60,7 @@ export default defineThemeConfig({
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
         name: 'Jun\'s Blog',
-        description: 'Discover. Share. Ignite.',
+        description: '探索未知，分享所思，点亮梦想',
         // circle: true,
         // location: '',
         // organization: '',
