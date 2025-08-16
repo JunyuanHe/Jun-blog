@@ -8,7 +8,7 @@ config:
     background: tint-plate
     hero:
       name: Jun's Blog
-      tagline: "Discover. Share. Ignite."
+      tagline: Discover. Share. Ignite.
       text: Hi, I'm Jun. Math major, Geeker, Physics lover, and robotics enthusiast.
       actions:
         -
