@@ -47,6 +47,12 @@ const zhCourses = defineNoteConfig({
   sidebar: 'auto',
 })
 
+const zhLearningNotes = defineNoteConfig({
+  dir: 'learning-notes',
+  link: '/learning-notes',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -55,7 +61,7 @@ const zhCourses = defineNoteConfig({
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhDemoNote, zhRobDiy, zhCourses],
+  notes: [zhDemoNote, zhLearningNotes ,zhRobDiy, zhCourses],
 })
 
 /* =================== locale: en-US ======================= */
@@ -72,6 +78,12 @@ const enDemoNote = defineNoteConfig({
   // sidebar: 'auto',
 })
 
+const enLearningNotes = defineNoteConfig({
+  dir: 'learning-notes',
+  link: '/learning-notes',
+  sidebar: 'auto',
+})
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -80,6 +92,6 @@ const enDemoNote = defineNoteConfig({
 export const enNotes = defineNotesConfig({
   dir: 'en/notes',
   link: '/en/',
-  notes: [enDemoNote],
+  notes: [enDemoNote, enLearningNotes],
 })
 

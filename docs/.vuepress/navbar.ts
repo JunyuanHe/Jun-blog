@@ -9,6 +9,7 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/', icon: 'carbon:home' },
   { text: '博客', link: '/blog/', icon: 'carbon:blog' },
+  { text: '笔记', link: '/notes/learning-notes/', icon: 'carbon:notebook' },
   { text: '标签', link: '/blog/tags/', icon: 'carbon:tag' },
   { text: '归档', link: '/blog/archives/', icon: 'carbon:archive' },
   { text: '自学路线', 
@@ -27,13 +28,14 @@ export const zhNavbar = defineNavbarConfig([
 ])
 
 export const enNavbar = defineNavbarConfig([
-  { text: 'Home', link: '/en/' },
-  { text: 'Blog', link: '/en/blog/' },
-  { text: 'Tags', link: '/en/blog/tags/' },
-  { text: 'Archives', link: '/en/blog/archives/' },
-  {
-    text: 'Notes',
-    items: [{ text: 'Demo', link: '/en/notes/demo/README.md' }]
-  },
+  { text: 'Home', link: '/en/', icon: 'carbon:home' },
+  { text: 'Blog', link: '/en/blog/', icon: 'carbon:blog' },
+  { text: 'Notes', link: '/en/notes/learning-notes/', icon: 'carbon:notebook' }, 
+  { text: 'Tags', link: '/en/blog/tags/', icon: 'carbon:tag' },
+  { text: 'Archives', link: '/en/blog/archives/', icon: 'carbon:archive' },
+  // {
+  //   text: 'Notes',
+  //   items: [{ text: 'Demo', link: '/en/notes/demo/README.md' }]
+  // },
 ])
 
