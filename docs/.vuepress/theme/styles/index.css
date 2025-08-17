@@ -18,3 +18,19 @@
   font-size: 12px;
   line-height: 18px;
 }
+
+.hero-tagline {
+  font-size: 40px !important;
+}
+
+@media (min-width: 768px) {
+  .hero-tagline {
+    font-size: 48px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero-tagline {
+    font-size: 60px !important;
+  }
+}
