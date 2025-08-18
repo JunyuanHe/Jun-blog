@@ -37,7 +37,7 @@ export const enNavbar = defineNavbarConfig([
     icon: 'gis:map-route', 
     items: [
       { text: 'Robotics Self-Learning Map', link: '/en/notes/robdiy/README.md', icon: 'mage:robot-wink' },
-      { text: 'Map of a Broader World', link: '/en/notes/courses/README.md', icon: 'mdi:book-open-page-variant-outline' },
+      { text: 'Connecting to the Bigger Picture', link: '/en/notes/courses/README.md', icon: 'mdi:book-open-page-variant-outline' },
     ]
   },
   // {
