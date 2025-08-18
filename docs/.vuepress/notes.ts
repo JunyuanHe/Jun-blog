@@ -78,6 +78,18 @@ const enDemoNote = defineNoteConfig({
   // sidebar: 'auto',
 })
 
+const enRobDiy = defineNoteConfig({
+  dir: 'robdiy',
+  link: '/robdiy',
+  sidebar: 'auto',
+})
+
+const enCourses = defineNoteConfig({
+  dir: 'courses',
+  link: '/courses',
+  sidebar: 'auto',
+})
+
 const enLearningNotes = defineNoteConfig({
   dir: 'learning-notes',
   link: '/learning-notes',
@@ -92,6 +104,6 @@ const enLearningNotes = defineNoteConfig({
 export const enNotes = defineNotesConfig({
   dir: 'en/notes',
   link: '/en/',
-  notes: [enDemoNote, enLearningNotes],
+  notes: [enDemoNote, enLearningNotes, enRobDiy, enCourses],
 })
 

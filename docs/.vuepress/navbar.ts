@@ -33,6 +33,13 @@ export const enNavbar = defineNavbarConfig([
   { text: 'Notes', link: '/en/notes/learning-notes/', icon: 'carbon:notebook' }, 
   { text: 'Tags', link: '/en/blog/tags/', icon: 'carbon:tag' },
   { text: 'Archives', link: '/en/blog/archives/', icon: 'carbon:archive' },
+  { text: 'Learning Map', 
+    icon: 'gis:map-route', 
+    items: [
+      { text: 'Robotics Self-Learning Map', link: '/en/notes/robdiy/README.md', icon: 'mage:robot-wink' },
+      { text: 'Map of a Broader World', link: '/en/notes/courses/README.md', icon: 'mdi:book-open-page-variant-outline' },
+    ]
+  },
   // {
   //   text: 'Notes',
   //   items: [{ text: 'Demo', link: '/en/notes/demo/README.md' }]
