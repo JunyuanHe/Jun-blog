@@ -1,0 +1,3 @@
+Sitemap: https://blog.junyuanhe.com/sitemap.xml
+User-agent:*
+Disallow:

@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./app-zBePlS9K.js";const r=t({},[["render",function(t,r){return a(),e("div")}]]),o=JSON.parse('{"path":"/blog/categories/","title":"分类","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"分类","draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"blog-categories"}');export{r as comp,o as data};

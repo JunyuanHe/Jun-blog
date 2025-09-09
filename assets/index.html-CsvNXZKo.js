@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e}from"./app-zBePlS9K.js";const r=t({},[["render",function(t,r){return e(),a("div")}]]),n=JSON.parse('{"path":"/en/blog/tags/","title":"Tags","lang":"en-US","frontmatter":{"lang":"en-US","title":"Tags","draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"blog-tags"}');export{r as comp,n as data};

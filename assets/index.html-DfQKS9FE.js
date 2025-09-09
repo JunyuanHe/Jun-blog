@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app-zBePlS9K.js";const r=e({},[["render",function(e,r){return a(),t("div")}]]),o=JSON.parse('{"path":"/en/blog/categories/","title":"Categories","lang":"en-US","frontmatter":{"lang":"en-US","title":"Categories","draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"blog-categories"}');export{r as comp,o as data};

@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./app-zBePlS9K.js";const a=e({},[["render",function(e,a){return r(),t("div")}]]),i=JSON.parse('{"path":"/en/blog/archives/","title":"Archives","lang":"en-US","frontmatter":{"lang":"en-US","title":"Archives","draft":true},"git":{},"filePathRelative":null,"headers":[],"type":"blog-archives"}');export{a as comp,i as data};
