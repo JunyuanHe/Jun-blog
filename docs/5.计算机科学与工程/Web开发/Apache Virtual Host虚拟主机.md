@@ -30,7 +30,7 @@ permalink: /article/afq0czul/
 
 2. 添加配置
 
-```conf
+```apache
 <VirtualHost *:443>
     ServerAdmin webmaster@yourdomain1.com
     ServerName yourdomain1.com

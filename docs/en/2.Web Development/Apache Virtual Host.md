@@ -32,7 +32,7 @@ Assuming your domain is `yourdomain1.com`, create a new configuration file:
 
 ### 2. Add Configuration
 
-```conf
+```apache
 <VirtualHost *:443>
     ServerAdmin webmaster@yourdomain1.com
     ServerName yourdomain1.com
