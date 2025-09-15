@@ -1,7 +1,7 @@
 ---
 title: SAM
 createTime: 2025/08/08 09:32:46
-permalink: /learning-notes/abqjh4xj/
+permalink: /article/abqjh4xj/
 ---
 
 

@@ -10,8 +10,9 @@ export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/', icon: 'carbon:home' },
   { text: '博客', link: '/blog/', icon: 'carbon:blog' },
   { text: '笔记', link: '/notes/learning-notes/', icon: 'carbon:notebook' },
-  { text: '标签', link: '/blog/tags/', icon: 'carbon:tag' },
-  { text: '归档', link: '/blog/archives/', icon: 'carbon:archive' },
+  { text: '分类', link: '/blog/categories/', icon: 'bx:category' },
+  // { text: '标签', link: '/blog/tags/', icon: 'carbon:tag' },
+  // { text: '归档', link: '/blog/archives/', icon: 'carbon:archive' },
   { text: '自学路线', 
     icon: 'gis:map-route', 
     items: [
@@ -30,9 +31,10 @@ export const zhNavbar = defineNavbarConfig([
 export const enNavbar = defineNavbarConfig([
   { text: 'Home', link: '/en/', icon: 'carbon:home' },
   { text: 'Blog', link: '/en/blog/', icon: 'carbon:blog' },
-  { text: 'Notes', link: '/en/notes/learning-notes/', icon: 'carbon:notebook' }, 
-  { text: 'Tags', link: '/en/blog/tags/', icon: 'carbon:tag' },
-  { text: 'Archives', link: '/en/blog/archives/', icon: 'carbon:archive' },
+  { text: 'Notes', link: '/en/notes/learning-notes/', icon: 'carbon:notebook' },
+  { text: 'Categories', link: '/blog/categories/', icon: 'bx:category' }, 
+  // { text: 'Tags', link: '/en/blog/tags/', icon: 'carbon:tag' },
+  // { text: 'Archives', link: '/en/blog/archives/', icon: 'carbon:archive' },
   { text: 'Learning Map', 
     icon: 'gis:map-route', 
     items: [

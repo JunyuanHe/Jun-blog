@@ -1,7 +1,7 @@
 ---
 title: Web基础知识
 createTime: 2025/09/09 09:02:02
-permalink: /learning-notes/3rpn8e6z/
+permalink: /article/3rpn8e6z/
 ---
 
 ## 网址、域名
