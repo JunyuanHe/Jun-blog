@@ -47,6 +47,12 @@ const zhCourses = defineNoteConfig({
   sidebar: 'auto',
 })
 
+const zhTechExams = defineNoteConfig({
+  dir: 'tech-exams',
+  link: '/tech-exams',
+  sidebar: 'auto',
+})
+
 const zhLearningNotes = defineNoteConfig({
   dir: 'learning-notes',
   link: '/learning-notes',
@@ -61,7 +67,7 @@ const zhLearningNotes = defineNoteConfig({
 export const zhNotes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [zhDemoNote, zhLearningNotes ,zhRobDiy, zhCourses],
+  notes: [zhDemoNote, zhLearningNotes ,zhRobDiy, zhCourses, zhTechExams],
 })
 
 /* =================== locale: en-US ======================= */
