@@ -155,7 +155,7 @@ export default defineUserConfig({
       codeSandbox: false,  // 启用嵌入 codeSandbox 语法 @[codeSandbox](id)
       jsfiddle: false,     // 启用嵌入 jsfiddle 语法 @[jsfiddle](user/id)
       npmTo: false,        // 启用 npm-to 容器  ::: npm-to
-      demo: false,         // 启用 demo 容器  ::: demo
+      demo: true,         // 启用 demo 容器  ::: demo
       repl: {             // 启用 代码演示容器
         go: false,         // ::: go-repl
         rust: false,       // ::: rust-repl
