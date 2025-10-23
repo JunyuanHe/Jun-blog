@@ -781,6 +781,14 @@ def decode(self, ids: list[int]) -> str:
     return byte_seq.decode("utf-8", errors="replace")
 ```
 
+::: tip 在解码（decode）过程中如何安全地将 token ID 转换为字符串
+
+用户输入的 token ID 序列**可能并不对应合法的 UTF-8 字节序列**，如果直接解码，可能会导致程序崩溃（抛出 `UnicodeDecodeError`）。
+
+在使用 `byte_seq.decode("utf-8")` 时，**必须加上 `errors="replace"`**，这样如果遇到非法字节，就会自动替换为 **Unicode 官方的替换字符 `U+FFFD`（显示为 �）**，避免错误。
+
+:::
+
 ### 在主函数中进行测试
 
 ``` python
@@ -799,15 +807,101 @@ if __name__ == '__main__':
 ```
 
 
-## 完善我们的BPE算法
+## 完善我们的BPE算法：支持用户自定义的特殊token
 
-### 支持用户自定义的特殊token
+### 训练阶段
 
-#### 训练阶段
+在分词器训练中我们想要增加对预先定义的特殊token的支持，如 `<|endoftext|>`. 下面我们具体分析当引入特殊token后，代码需要做哪些修改。
 
-在分词器训练中增加对用户预先自定义的特殊token的支持：
+**核心问题**
 
-用户预先自定义的这些特殊token应当被添加到vocab中，但不应参与BPE分词过程。
+在 BPE 训练中，如果文本中存在特殊 token（如 `<|endoftext|>`），必须保证：
+
+1. **特殊 token 不会被拆分或合并**；
+2. **不会跨特殊 token 合并相邻字符**；
+3. **最终词表中包含这些特殊 token，作为原子单位存在**。
+
+否则可能导致：
+
+* 跨文档合并，破坏语料边界；
+* 特殊 token 被拆分，无法正确识别。
+
+---
+
+**对训练流程的修改要点**
+
+（1）初始化词表
+
+* 原始词表：`0~255` 对应单字节。
+* 添加特殊 token：
+
+  * 编码为 UTF-8 bytes。
+  * 作为新的词表项加入。
+  * 在 BPE 合并中不允许拆分。
+
+```python
+vocab = {i: bytes([i]) for i in range(256)}
+next_id = 256
+for tok in special_tokens:
+    tok_b = tok.encode("utf-8")
+    vocab[next_id] = tok_b
+    next_id += 1
+```
+
+（2）切分语料
+
+* 在做预分词（pre-tokenization）前，**先按特殊 token 切分语料**。
+* 保证特殊 token 独立，非特殊 token 才做正则预分词。
+* 可以使用正则 `re.split`：
+
+```python
+split_pat = "(" + "|".join(re.escape(tok) for tok in special_tokens) + ")"
+segments = re.split(split_pat, text)
+```
+
+切分后得到的片段：
+  * 特殊 token： 直接作为一个整体；
+  * 其他文本： 用正则 PAT 做 pre-tokenization。
+
+
+（3）构建频率表
+
+对每个 segment：
+  1. 如果是特殊 token → 加入频率表，作为单元素 tuple，不参与合并。
+  2. 其他 segment → 正则分词后，将每个 token 转为 bytes tuple，再统计频率。
+
+```python
+for seg in segments:
+    if seg in special_tokens:
+        freq_table_tuple[(seg.encode("utf-8"),)] += 1
+    else:
+        for m in re.finditer(PAT, seg):
+            bt = tuple(bytes([x]) for x in m.group().encode("utf-8"))
+            freq_table_tuple[bt] += 1
+```
+
+（4）BPE 合并循环
+
+对频率表中**非特殊 token 的 byte tuples**做两两合并。特殊 token 的 byte tuple 长度为 1，自然不会参与合并。
+
+合并步骤保持原有逻辑：
+  * 统计最频繁 pair；
+  * 加入词表；
+  * 更新频率表。
+
+---
+
+**关键效果**
+
+* 特殊 token 被保留，作为原子单位；
+* 不会跨特殊 token 进行合并；
+* 正常 token 仍可进行 BPE 合并；
+* 最终词表中包含特殊 token + 所有 BPE 合并结果；
+* 下游编码/解码器可直接使用。
+
+---
+
+完整代码如下：
 
 ```python
 def train_bpe(text: str, num_merges: int, special_tokens: list[str]) -> tuple[ dict[int, bytes], list[tuple[bytes, bytes]] ]:
@@ -877,8 +971,77 @@ def train_bpe(text: str, num_merges: int, special_tokens: list[str]) -> tuple[ d
     return vocab, merges
 ```
 
+::: details 为何使用 `re.split()` 而不是 `str.split()` ?
 
-#### 编码阶段
+之所以不使用 `str.split()`，是因为它不会保留分隔符（特殊 token），并且只支持按单个分隔符切分，不能一次处理多个不同的特殊 token（或模式）。我们来逐步解释。
+
+
+**问题 1：`str.split()` 不会保留特殊 token**
+
+示例：
+
+```python
+text = "Hello<|endoftext|>World"
+segments = text.split("<|endoftext|>")
+```
+
+结果：
+
+```python
+["Hello", "World"]
+```
+
+特殊 token `<|endoftext|>` 丢失了！但我们需要保留它，因为它必须被计数并完整地保留进词表中。
+
+---
+
+**问题 2：`str.split()` 只能接受一个分隔符（不支持多个）**
+
+如果你有：
+
+```python
+special_tokens = ["<|endoftext|>", "<|pad|>", "<bos>"]
+```
+
+你不能这样写：
+
+```python
+text.split(special_tokens)  # 类型错误
+```
+
+你只能手动链式或循环多次 split，但这不仅麻烦，而且仍然会遇到问题 1（丢失 token）。
+
+---
+
+**`re.split()` 的优势**
+
+`re.split()` 支持：
+✔ 多个分隔符；
+✔ 捕获组（使用括号），即可保留分隔符在结果中
+
+示例：
+
+```python
+import re
+special_tokens = ["<|endoftext|>", "<|pad|>"]
+pattern = "(" + "|".join(re.escape(tok) for tok in special_tokens) + ")"
+segments = re.split(pattern, "Hello<|endoftext|>World<|pad|>Again")
+```
+
+结果：
+
+```python
+["Hello", "<|endoftext|>", "World", "<|pad|>", "Again"]
+```
+
+这样，特殊 token 被完整保留，各段内容也被清晰分开
+
+---
+
+:::
+
+
+### 编码阶段
 
 增加处理用户指定的特殊token的版本：
 
