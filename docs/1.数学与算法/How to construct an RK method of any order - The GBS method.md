@@ -2,6 +2,7 @@
 title: "How to construct an RK method of any order? - The GBS method"
 createTime: 2025/11/24 20:43:42
 permalink: /article/s5lpmere/
+draft: true
 ---
 
 We have seen the power of Richardson extrapolation in this previous article [](https://blog.junyuanhe.com/article/02konsuj/). This time, we will show an even more powerful application —— constructing Runge--Kutta methods for arbitrary (even) order $p$.
