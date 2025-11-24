@@ -11,7 +11,9 @@ permalink: /article/o0lqcpqr/
 我在此也来分享一下成功的版本选择。
 
 硬件方面：显卡是 RTX 5080
+
 系统方面：WSL 2 (Ubuntu 22.04.5)
+
 软件方面：
 - Python=3.10
 - CUDA=12.8
