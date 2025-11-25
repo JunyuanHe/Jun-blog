@@ -4,14 +4,14 @@ createTime: 2025/11/25 14:03:42
 permalink: /article/s5lpmere/
 ---
 
-We have seen the power of Richardson extrapolation in this previous article [](https://blog.junyuanhe.com/article/02konsuj/). This time, we will show an even more powerful application —— constructing Runge--Kutta methods for arbitrary (even) order $p$. This is what we call the **Gragg-Bulirsch-Stoer (GBS) extrapolation algorithm**.
+We have seen the power of Richardson extrapolation in this previous article [](https://blog.junyuanhe.com/article/02konsuj/). This time, we will show an even more powerful application —— constructing Runge-Kutta methods for arbitrary (even) order $p$. This is what we call the **Gragg-Bulirsch-Stoer (GBS) extrapolation algorithm**.
 
+The construction of Runge-Kutta methods for arbitrary order $p$ is a well-known difficult problem. But the GBS algorithm gives an elegant way to do this, and gives an upper-bound on the lowest stages number estimate, which has not been successfully improved in 60 years since this method was given in 1964.
 
----
 
 ## 1. **Start with the modified midpoint method**
 
-The GBS algorithm uses the **modified midpoint method** for a single step of size $H$ subdivided into $n$ substeps $(h = H/n)$:
+The GBS algorithm uses the **modified midpoint method** for a single step of size $H$ subdivided into $n$ substeps ($h = H/n$):
 
 $$
 y_0 = y(t_0), \quad y_1 = y_0 + h f(t_0, y_0)
