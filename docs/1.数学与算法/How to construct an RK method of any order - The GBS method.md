@@ -4,7 +4,7 @@ createTime: 2025/11/25 14:03:42
 permalink: /article/s5lpmere/
 ---
 
-We have seen the power of Richardson extrapolation in this previous article [](https://blog.junyuanhe.com/article/02konsuj/). This time, we will show an even more powerful application —— constructing Runge-Kutta methods for arbitrary (even) order $p$. This is what we call the **Gragg-Bulirsch-Stoer (GBS) extrapolation algorithm**.
+We have seen the power of Richardson extrapolation in this previous article: [Want to get high order?](https://blog.junyuanhe.com/article/02konsuj/). This time, we will show an even more powerful application —— constructing Runge-Kutta methods for arbitrary (even) order $p$. This is what we call the **Gragg-Bulirsch-Stoer (GBS) extrapolation algorithm**.
 
 The construction of Runge-Kutta methods for arbitrary order $p$ is a well-known difficult problem. But the GBS algorithm gives an elegant way to do this, and gives an upper-bound on the lowest stages number estimate, which has not been successfully improved in 60 years since this method was given in 1964.
 
