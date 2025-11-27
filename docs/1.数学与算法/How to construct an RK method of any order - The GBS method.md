@@ -181,7 +181,7 @@ That is the **general formula** for the final extrapolated value in terms of the
 
 
 
-### 2.4. **Example: simple 3-step extrapolation**
+### 2.5. **Example: simple 3-step extrapolation**
 
 Suppose $n_1 = 2$, $n_2 = 4$, $n_3 = 6$ substeps.
 

@@ -69,11 +69,11 @@ $$
 Q = HW_Q,\quad K = HW_K,\quad V = HW_V.
 $$
 
-其中：
+其中 $Q,K,V \in \mathbb{R}^{T \times d}$：
 
-* Query（Q）表示“我想从别人那里获取什么信息”
-* Key（K）表示“我是什么类型的信息”
-* Value（V）表示“我携带的信息内容”
+* Query $Q$ 表示“我想从别人那里获取什么信息”
+* Key $K$ 表示“我是什么类型的信息”
+* Value $V$ 表示“我携带的信息内容”
 
 这是注意力机制的基础。
 
@@ -220,7 +220,7 @@ $$
 对每个 token 独立应用一个两层 MLP：
 
 $$
-\text{FFN}(x) = W_2 ,\sigma(W_1 x + b_1) + b_2,
+\text{FFN}(x) = W_2 \,\sigma(W_1 x + b_1) + b_2,
 $$
 典型激活函数为 GELU（Gaussian Error Linear Unit）。
 
