@@ -2,7 +2,7 @@
 title: "Transformer进行语言建模的基础理论"
 createTime: 2025/11/21 09:27:48
 permalink: /article/hpc1j7ry/
-draft: true
+draft: false
 ---
 
 
@@ -26,6 +26,10 @@ $$
 
 目前主流语言模型（GPT、LLaMA 等）都采用 **Decoder-only Transformer**，因为该结构天然适合自回归预测。
 
+Transformer的结构有许多变种，现代LLM中常用的decoder-only transformer的一个常见的版本如下图所示：
+
+![Architecture of a decoder-only transformer language model. <br> Source of figure: Language Models from Scratch, Stanford CS336 course notes](Transformer-decoder.png)
+
 ### 1.1 输入表示：Token Embedding + Position Embedding
 
 序列的离散 token 首先映射到向量空间：
@@ -34,7 +38,7 @@ e_t = E[x_t] \in \mathbb{R}^d,
 $$
 其中 $E \in \mathbb{R}^{|\mathcal{V}|\times d}$ 是可训练的词嵌入矩阵。
 
-由于注意力机制本身不编码位置信息，因此加入位置向量 $p_t$：
+由于注意力机制本身不编码位置信息，因此加入位置向量 $p_t$（传统的位置编码）：
 $$
 h_t^{(0)} = e_t + p_t.
 $$
@@ -106,7 +110,7 @@ $$
 \text{Attn}(H) = AV.
 $$
 
-#### ⭐ 自回归的关键点
+::: info 自回归的关键点
 
 由于 mask 强制 $A_{ij}=0$（softmax 后趋近 0）对所有 $j > i$，
 因此：
@@ -114,7 +118,13 @@ $$
 > **Token $t$ 的新表示严格只依赖于 $1,\dots,t$ 的输入。**
 
 这正是语言模型的因果性（causality）。
+:::
 
+::: info 为什么要除以 $\sqrt{d_k}$?
+当 $d_k$（键向量的维度）很大时，点积 $QK^\top$ 的值可能会很大。原因是：对于独立的随机向量 $q$, $k$，点积的方差大约是 $\operatorname{Var}(q\cdot k) = d_k$. 这会造成的后果是：点积的数值更大 → softmax 会输出接近 0 或 1 的极端值 → 梯度消失 → 训练不稳定。
+
+解决办法是：在点积之前除以 $\sqrt{d_k}$ 进行缩放，这样可以保证点积的数值不会因为维度变大而过大，softmax 的梯度更稳定。
+:::
 
 ### 2.3 多头注意力（Multi-Head Attention）
 
@@ -162,7 +172,7 @@ $$
 \text{head}^{(i)} = A^{(i)} V^{(i)}.
 $$
 
-### 🔸 拼接所有注意力头
+#### 拼接所有注意力头
 
 将全部 $h$ 个头拼接：
 
@@ -183,9 +193,9 @@ W_O \in \mathbb{R}^{d \times d}.
 $$
 
 
-## 多头注意力的几个关键数学直觉
+#### 多头注意力的几个关键数学直觉
 
-### (1) 低维子空间的分解
+**(1) 低维子空间的分解**
 
 每个注意力头在一个 $d_h$ 维子空间中计算 Q/K/V：
 $$
@@ -203,7 +213,7 @@ $$
 
 > **多头注意力是一种可学习的、稀疏化的、非共享的分块矩阵分解**，提升模型刻画多种相关性的能力。
 
-### (2) 多种关系模式的并行建模
+**(2) 多种关系模式的并行建模**
 
 不同头学到的内容具有明显分工：
 
@@ -247,7 +257,7 @@ FFN 提供了注意力之外的非线性建模能力，使 Transformer 具备 un
 LayerNorm 是 Transformer 成功的关键。下面是详细数学展开。
 
 
-## 2.5.1 Layer Normalization 的数学定义
+#### 2.5.1 Layer Normalization 的数学定义
 
 对每个 token 的隐藏向量
 $$
@@ -255,47 +265,48 @@ x = (x_1,x_2,\dots,x_d) \in \mathbb{R}^d,
 $$
 LayerNorm 在 **特征维度**（而非 batch 或时间维度）做归一化：
 
-### Step 1 — 求均值
+:::: steps
 
-$$
-\mu = \frac{1}{d} \sum_{i=1}^{d} x_i.
-$$
+1. Step 1 — 求均值
 
-### Step 2 — 求方差
+   $$
+   \mu = \frac{1}{d} \sum_{i=1}^{d} x_i.
+   $$
 
-$$
-\sigma^2
-= \frac{1}{d} \sum_{i=1}^{d} (x_i - \mu)^2.
-$$
+2. Step 2 — 求方差
 
-### Step 3 — 归一化
+   $$
+   \sigma^2
+   = \frac{1}{d} \sum_{i=1}^{d} (x_i - \mu)^2.
+   $$
 
-$$
-\hat x_i = \frac{x_i - \mu}{\sqrt{\sigma^2 + \epsilon}}.
-$$
+3. Step 3 — 归一化
 
-### Step 4 — 线性缩放和平移（可训练参数）
+   $$
+   \hat x_i = \frac{x_i - \mu}{\sqrt{\sigma^2 + \epsilon}}.
+   $$
 
-$$
-\text{LN}(x)_i = \gamma_i \hat x_i + \beta_i,
-$$
-其中
-$$
-\gamma, \beta \in \mathbb{R}^d \text{ 是可训练参数}.
-$$
+4. Step 4 — 线性缩放和平移（可训练参数）
 
+   $$
+   \text{LN}(x)_i = \gamma_i \hat x_i + \beta_i,
+   $$
+   其中 $\gamma, \beta \in \mathbb{R}^d$ 是可训练参数.
+   $$
+
+::::
 
 ## 2.5.2 为什么 Transformer 使用 LayerNorm 而不是 BatchNorm？
 
-### BatchNorm 不适合 Transformer 的两个关键原因：
+BatchNorm 不适合 Transformer 的两个关键原因：
 
-#### （1）序列长度可变，batch 上的统计量不稳定
+1. 序列长度可变，batch 上的统计量不稳定
 
-自注意力需要跨 token 计算，batch size 可能很小，而且不同 token 含义完全不同，用 batch 统计意义不大。
+   自注意力需要跨 token 计算，batch size 可能很小，而且不同 token 含义完全不同，用 batch 统计意义不大。
 
-#### （2）生成任务推理时 batch size 通常为 1
+2. 生成任务推理时 batch size 通常为 1
 
-BatchNorm 会退化，而 LayerNorm 不依赖 batch 统计。
+   BatchNorm 会退化，而 LayerNorm 不依赖 batch 统计。
 
 所以 LayerNorm 完全避免了这些问题。
 
@@ -322,20 +333,17 @@ $$
 
 Pre-LN 具备显著优势：
 
-### (1) 梯度路径更短，消除梯度消失
+1. 梯度路径更短，消除梯度消失
 
-在 Pre-LN 中，残差路径为：
-$$
-H \longrightarrow \tilde H
-$$
-完全绕过了 MHA 和 FFN 内部的复杂操作，使训练深度模型更稳定。
+   在 Pre-LN 中，残差路径为：
+   $$
+   H \longrightarrow \tilde H
+   $$
+   完全绕过了 MHA 和 FFN 内部的复杂操作，使训练深度模型更稳定。
 
-### (2) 每个子层都接收归一化后的输入，数值更稳定
+2. 每个子层都接收归一化后的输入，数值更稳定
 
-### (3) 微分方程视角
-
-有研究表明 Transformer 可被视为数值积分方程的离散化，
-Pre-LN 对应更稳定的显式方法。
+3. 微分方程视角：有研究表明 Transformer 可被视为数值积分方程的离散化，Pre-LN 对应更稳定的显式方法。
 
 
 
@@ -378,15 +386,15 @@ $$
 
 ## 4. 推理（Inference）：Transformer 如何生成文本
 
-给定前缀 $x_1,\dots,x_{t-1}$，模型预测下一个 token：
+给定前缀 $x_1,\dots,x_{t-1}$，模型预测下一个 token. 主要有两种方式：
 
-### Greedy：
+1. Greedy （简单）：
 
 $$
 x_t = \arg\max_{w \in \mathcal{V}} p_\theta(w \mid x_{<t}).
 $$
 
-### Random Sampling（Top-k / Top-p / Temperature）：
+2. Random Sampling（Top-k / Top-p / Temperature）（常见）：
 
 $$
 x_t \sim p_\theta(\cdot \mid x_{<t}).
@@ -410,6 +418,7 @@ $$
    $$
 
 3. **深度结构（残差 + LN + FFN）**
+
    自注意力构建上下文依赖，FFN 提供非线性表达。
 
 4. **最大似然训练**
