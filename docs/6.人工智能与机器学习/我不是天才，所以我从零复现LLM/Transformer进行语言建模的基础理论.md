@@ -296,7 +296,7 @@ LayerNorm 在 **特征维度**（而非 batch 或时间维度）做归一化：
 
 ::::
 
-## 2.5.2 为什么 Transformer 使用 LayerNorm 而不是 BatchNorm？
+#### 2.5.2 为什么 Transformer 使用 LayerNorm 而不是 BatchNorm？
 
 BatchNorm 不适合 Transformer 的两个关键原因：
 
@@ -312,7 +312,7 @@ BatchNorm 不适合 Transformer 的两个关键原因：
 
 
 
-## 2.5.3 “前置 LN”（Pre-LN）结构为什么更稳定？
+#### 2.5.3 “前置 LN”（Pre-LN）结构为什么更稳定？
 
 现代 Transformer（GPT-2/3/4，LLaMA 系列）几乎全部使用以下结构：
 
