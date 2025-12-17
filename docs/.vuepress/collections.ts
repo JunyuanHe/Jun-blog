@@ -47,7 +47,15 @@ export const zhLearningNotes = defineCollection({
     title: 'learning notes',
     linkPrefix: '/learning-notes/',
     sidebar: 'auto',
-    })
+})
+
+export const zhDiary = defineCollection({
+    type: 'doc',
+    dir: '自省录',
+    title: '自省录',
+    linkPrefix: '/diary/',
+    sidebar: 'auto',
+})
 
 export const zhCollections = defineCollections([
   zhBlog,
@@ -55,7 +63,8 @@ export const zhCollections = defineCollections([
   zhRobDiy,
   zhCourses,
   zhTechExams,
-  zhLearningNotes
+  zhLearningNotes,
+  zhDiary
 ])
 
 

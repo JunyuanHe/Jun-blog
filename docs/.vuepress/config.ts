@@ -211,5 +211,15 @@ export default defineUserConfig({
      * @see https://theme-plume.vuejs.press/guide/features/encryption/
      */
     // encrypt: {},
+
+
+    plugins: {
+      sitemap: {
+        // excludePaths: [
+        //   '/diary/'        
+        // ]
+      }
+    },
+
   }),
 })

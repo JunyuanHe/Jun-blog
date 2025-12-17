@@ -1,8 +1,9 @@
 ---
 title: 听黄老师谈教育经验有感draft
 createTime: 2025/10/31 13:20:21
-permalink: /article/yzlrp0bi/
+permalink: /diary/yzlrp0bi/
 draft: true
+sitemap: false
 ---
 
 中午和老师吃完饭散步回来，路上老师偶遇了熟人，聊起了天。年轻的夫妻俩聊起了他们的孩子，上一年级，在旁边的启元上学；黄老师说，他家老二也在启元。话题就这样开始了。
