@@ -12,7 +12,8 @@
 
 import { defineThemeConfig } from 'vuepress-theme-plume'
 import { enNavbar, zhNavbar } from './navbar'
-import { enNotes, zhNotes } from './notes'
+// import { enNotes, zhNotes } from './notes'
+import { zhCollections, enCollections } from './collections'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -67,7 +68,7 @@ export default defineThemeConfig({
       },
 
       navbar: zhNavbar,
-      notes: zhNotes,
+      collections: zhCollections,
 
       /**
        * 公告板
@@ -94,7 +95,7 @@ export default defineThemeConfig({
       },
 
       navbar: enNavbar,
-      notes: enNotes,
+      collections: enCollections,
 
       /**
        * 公告板
