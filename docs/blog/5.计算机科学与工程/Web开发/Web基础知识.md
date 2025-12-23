@@ -2,6 +2,8 @@
 title: Web基础知识
 createTime: 2025/09/09 09:02:02
 permalink: /article/3rpn8e6z/
+tags: 
+  - Web
 ---
 
 ## 网址、域名
