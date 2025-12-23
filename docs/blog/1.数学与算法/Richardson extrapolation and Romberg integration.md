@@ -2,6 +2,8 @@
 title: "Want to get high order? —— A Detailed Guide to Richardson Extrapolation and Romberg Integration"
 createTime: 2025/11/17 16:43:00
 permalink: /article/02konsuj/
+tags:
+  - Numerical Analysis
 ---
 
 Numerical approximation methods often introduce errors that depend systematically on a **step size** $h$.

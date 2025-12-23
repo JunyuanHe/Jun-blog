@@ -2,6 +2,9 @@
 title: "How to construct an RK method of any order? —— The GBS method"
 createTime: 2025/11/25 14:03:42
 permalink: /article/s5lpmere/
+tags:
+    - Numerical Analysis
+    - RK
 ---
 
 We have seen the power of Richardson extrapolation in this previous article: [Want to get high order?](https://blog.junyuanhe.com/article/02konsuj/). This time, we will show an even more powerful application —— constructing Runge-Kutta methods for arbitrary (even) order $p$. This is what we call the **Gragg-Bulirsch-Stoer (GBS) extrapolation algorithm**.

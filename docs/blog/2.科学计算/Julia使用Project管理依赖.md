@@ -2,6 +2,8 @@
 title: Julia使用Project管理依赖
 createTime: 2025/11/19 19:30:37
 permalink: /article/j0qau56n/
+tags:
+    - Julia
 ---
 
 ## 一、如何创建一个 Julia 项目（Project）

@@ -2,6 +2,8 @@
 title: WSL无法使用代理？镜像模式来帮你！
 createTime: 2025/11/24 15:20:14
 permalink: /article/d7rdvig7/
+tags:
+    - WSL
 ---
 
 这两天给新系统安装 WSL 2，安装完毕后，弹出来下面一则提示：

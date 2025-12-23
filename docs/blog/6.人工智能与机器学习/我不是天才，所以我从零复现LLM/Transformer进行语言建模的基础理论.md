@@ -2,6 +2,8 @@
 title: "Transformer进行语言建模的基础理论"
 createTime: 2025/11/21 09:27:48
 permalink: /article/hpc1j7ry/
+tags:
+   - LLM
 draft: false
 ---
 

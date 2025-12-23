@@ -2,6 +2,8 @@
 title: Mathematica中Table的用法
 createTime: 2025/09/15 12:55:22
 permalink: /article/uv6aw37b/
+tags:
+    - Mathematica
 ---
 
 `Table` 是 Mathematica 中非常核心的生成数据和矩阵的方法，它既可以生成数值矩阵，也可以生成符号矩阵，非常灵活。

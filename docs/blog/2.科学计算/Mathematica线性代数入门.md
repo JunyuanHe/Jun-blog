@@ -2,6 +2,8 @@
 title: Mathematica线性代数入门
 createTime: 2025/09/14 12:43:23
 permalink: /article/qqizy8hm/
+tags:
+    - Mathematica
 ---
 
 

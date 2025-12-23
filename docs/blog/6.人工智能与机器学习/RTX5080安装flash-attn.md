@@ -2,6 +2,8 @@
 title: RTX5080 显卡安装 flash-attn
 createTime: 2025/11/24 20:58:06
 permalink: /article/o0lqcpqr/
+tags:
+    - LLM
 ---
 
 首先，必须要感谢 MinChoi0129 在这个[issue](https://github.com/Dao-AILab/flash-attention/issues/2016)中提供的信息。链接已附上供参考。

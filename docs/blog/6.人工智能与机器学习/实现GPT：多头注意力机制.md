@@ -2,6 +2,8 @@
 title: 实现GPT：多头注意力机制
 createTime: 2025/10/30 15:56:17
 permalink: /article/fzl8flqb/
+tags:
+    - LLM
 draft: true
 ---
 

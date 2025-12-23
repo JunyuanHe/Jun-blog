@@ -2,6 +2,8 @@
 title: BPE Tokenizer的实现
 createTime: 2025/10/22 19:28:57
 permalink: /article/dirq0u1t/
+tags:
+    - LLM
 ---
 
 <!-- ## 专栏序言
