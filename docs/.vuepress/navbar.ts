@@ -10,6 +10,7 @@ export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/', icon: 'carbon:home' },
   { text: '博客', link: '/blog/', icon: 'carbon:blog' },
   { text: '笔记', link: '/learning-notes/', icon: 'carbon:notebook' },
+  { text: '利器', link: '/uses/', icon: 'carbon:tool-kit' },
   { text: '分类', link: '/blog/categories/', icon: 'bx:category' },
   // { text: '标签', link: '/blog/tags/', icon: 'carbon:tag' },
   // { text: '归档', link: '/blog/archives/', icon: 'carbon:archive' },
@@ -32,6 +33,7 @@ export const enNavbar = defineNavbarConfig([
   { text: 'Home', link: '/en/', icon: 'carbon:home' },
   { text: 'Blog', link: '/en/blog/', icon: 'carbon:blog' },
   { text: 'Notes', link: '/en/learning-notes/', icon: 'carbon:notebook' },
+  { text: 'Uses', link: '/en/uses/', icon: 'carbon:tool-kit' },
   { text: 'Categories', link: '/blog/categories/', icon: 'bx:category' }, 
   // { text: 'Tags', link: '/en/blog/tags/', icon: 'carbon:tag' },
   // { text: 'Archives', link: '/en/blog/archives/', icon: 'carbon:archive' },
@@ -47,4 +49,3 @@ export const enNavbar = defineNavbarConfig([
   //   items: [{ text: 'Demo', link: '/en/notes/demo/README.md' }]
   // },
 ])
-

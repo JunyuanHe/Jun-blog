@@ -23,8 +23,8 @@ config:
 
 
 
-<CardGrid>
+<!-- <CardGrid>
   <LinkCard title="基础课程模块" icon="logos:nodejs-icon" href="https://nodejs.org/" />
   <LinkCard title="感知与识别模块" icon="logos:deno" href="https://deno.land/" />
   <LinkCard title="动作决策模块" icon="logos:bun" href="https://bun.sh/" />
-</CardGrid>
+</CardGrid> -->
