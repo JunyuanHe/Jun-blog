@@ -35,6 +35,7 @@ export default defineUserConfig({
   head: [
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
+    ['meta', { name: 'impact-site-verification', value: '3bf5841e-6801-4726-9077-e00388066716' }],
   ],
 
 
