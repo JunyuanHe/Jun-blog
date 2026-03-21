@@ -1,67 +1,63 @@
 ---
 title: 利器
 permalink: /uses/
+description: 我日常依赖的几套装备包。
 ---
 
-# 利器
+我日常依赖的几套包。
 
-这里记录我在硬件、软件、服务和生活上的日常使用清单。
+**快速定位：** [出海创业包](#startup-stack) · [量化研究包](#quant-stack) · [学术写作包](#writing-stack) · [离线回血包](#offline-stack)
 
-这不是排行榜，也不是面向所有人的标准答案，而是一份会随时间持续调整的个人 uses 页面。真正长期留下来的，通常不是“最强”的选项，而是最适合我当前工作流和生活方式的那一套。
+## 出海创业包 {#startup-stack}
 
-## 使用原则与更新说明
+域名在万网，DNS 丢给 Cloudflare，前端 Vercel，后端 Render，数据存 Neon。
 
-我会优先记录那些正在稳定使用、并且确实改变了效率或体验的东西，而不是短期尝试过的新鲜玩具。
+<CardGrid>
+  <LinkCard title="万网" href="https://www.alibabacloud.com/domain" />
+  <LinkCard title="Cloudflare" href="https://www.cloudflare.com/" />
+  <LinkCard title="Vercel" href="https://vercel.com/" />
+  <LinkCard title="Render" href="https://render.com/" />
+  <LinkCard title="Neon" href="https://neon.tech/" />
+</CardGrid>
 
-这个页面会慢慢补全。与其一次性堆很多名字，我更希望把每个条目为什么留下来写清楚，这样这份清单才有长期价值。
+## 量化研究包 {#quant-stack}
 
-后续每个条目原则上都会按照同一套模板整理，方便持续维护与替换：
+数据用 FCS API + 掘金量化，策略用 Python 跑。
 
-- 名称：
-- 用途：
-- 我为什么在用：
-- 备注 / 替代项：
+<CardGrid>
+  <LinkCard title="FCS API" href="https://fcsapi.com/" />
+  <LinkCard title="掘金量化" href="https://www.myquant.cn/" />
+  <LinkCard title="Python" href="https://www.python.org/" />
+</CardGrid>
 
-## 硬件
+## 学术写作包 {#writing-stack}
 
-这一部分会整理我长期使用的电脑、显示器、外设、音频设备，以及会直接影响工作流的其他硬件。
+文献搜集用 Perplexity，关系挖掘丢给 ResearchRabbit，数据提取靠 Elicit，逻辑清洗进 NotebookLM，最后 Antigravity 调度 LLM 出草稿。
 
-后续补充时，我会更关注它们在真实使用中的稳定性、舒适度和性价比，而不只是参数表上的强弱。
+- 情报情报站： Perplexity (代替 Google Scholar 搞定实时综述与 DOI)。
+- 关系拓扑图： ResearchRabbit / Litmaps (一键爬出引文脉络与大牛圈子)。
+- 硬核数据提取： Elicit / Scite.ai (自动把几十篇 PDF 的实验结果、样本量拆成对比表)。
+- 私人语料库： NotebookLM (把搜到的文献喂进去，防止 AI 瞎编，只基于已有 PDF 说话)。
+- 逻辑调度中枢： Antigravity (自建 Agent 串联以上信息，完成从大纲到正文的最终“拼装”)。
 
-- 名称：
-- 用途：
-- 我为什么在用：
-- 备注 / 替代项：
+<CardGrid>
+  <LinkCard title="Antigravity" href="#" />
+  <LinkCard title="ResearchRabbit" href="https://www.researchrabbit.ai/" />
+  <LinkCard title="Litmaps" href="https://www.litmaps.com/" />
+  <LinkCard title="Elicit" href="https://elicit.com/" />
+  <LinkCard title="Scite.ai" href="https://scite.ai/" />
+  <LinkCard title="NotebookLM" href="https://notebooklm.google/" />
+  <LinkCard title="Perplexity" href="https://www.perplexity.ai/" />
+</CardGrid>
 
-## 软件
+## 离线回血包 {#offline-stack}
 
-这里会记录我高频使用的操作系统工具、开发工具、写作工具、学习工具，以及真正进入日常流程的软件。
+[离线回血包]：中国结丝线、毽球、台球杆、LEGO 机械组、Keep 健身。
 
-我更关心一个软件是否能让我长期保持清晰和高效，而不是它一时看起来有多少功能。
-
-- 名称：
-- 用途：
-- 我为什么在用：
-- 备注 / 替代项：
-
-## 服务
-
-这一部分会放我正在付费或持续依赖的线上服务，包括云服务、订阅服务、协作工具与其他数字基础设施。
-
-后续补充时，我会特别说明哪些服务值得长期投入，哪些只是阶段性使用。
-
-- 名称：
-- 用途：
-- 我为什么在用：
-- 备注 / 替代项：
-
-## 生活
-
-除了工作和学习，生活方式本身也会决定产出质量。这一部分会记录我在日常生活中持续使用、并且确实改善体验的东西。
-
-它们不一定“硬核”，但往往更能体现一个人如何安排自己的能量、环境和节奏。
-
-- 名称：
-- 用途：
-- 我为什么在用：
-- 备注 / 替代项：
+<CardGrid>
+  <LinkCard title="中国结丝线" href="#" />
+  <LinkCard title="毽球" href="#" />
+  <LinkCard title="台球杆" href="#" />
+  <LinkCard title="LEGO 机械组" href="https://www.lego.com/themes/technic" />
+  <LinkCard title="Keep" href="https://www.gotokeep.com/" />
+</CardGrid>

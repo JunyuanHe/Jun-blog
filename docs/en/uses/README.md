@@ -1,67 +1,56 @@
 ---
 title: Uses
 permalink: /en/uses/
+description: The stacks I rely on day to day.
 ---
 
-# Uses
+The stacks I rely on day to day.
 
-This page tracks the tools, gear, services, and everyday essentials I actually use.
+**Quick jump:** [Startup Stack](#startup-stack) · [Quant Stack](#quant-stack) · [Writing Stack](#writing-stack) · [Offline Stack](#offline-stack)
 
-It is not a ranking and not a universal recommendation list. It is a living personal uses page that changes with my workflow and lifestyle. What stays here over time is usually not the "best" option in theory, but the one that keeps proving useful in practice.
+## Startup Stack {#startup-stack}
 
-## Principles and Update Notes
+**Startup Stack:** Domain on Wanwang, DNS on Cloudflare, frontend on Vercel, backend on Render.
 
-I plan to document the things I use consistently and that materially improve my work or daily life, rather than listing every short-term experiment.
+<CardGrid>
+  <LinkCard title="Wanwang" href="https://www.alibabacloud.com/domain" />
+  <LinkCard title="Cloudflare" href="https://www.cloudflare.com/" />
+  <LinkCard title="Vercel" href="https://vercel.com/" />
+  <LinkCard title="Render" href="https://render.com/" />
+</CardGrid>
 
-This page will be filled in gradually. Instead of dropping a pile of names all at once, I want each item to explain why it earned a place here.
+## Quant Stack {#quant-stack}
 
-Each entry will follow the same template so the page stays easy to maintain over time:
+**Quant Stack:** Data from FCS API and MyQuant, with strategies running in Python.
 
-- Name:
-- What I use it for:
-- Why I keep using it:
-- Notes / alternatives:
+<CardGrid>
+  <LinkCard title="FCS API" href="https://fcsapi.com/" />
+  <LinkCard title="MyQuant" href="https://www.myquant.cn/" />
+  <LinkCard title="Python" href="https://www.python.org/" />
+</CardGrid>
 
-## Hardware
+## Writing Stack {#writing-stack}
 
-This section will cover the computers, displays, peripherals, audio gear, and other hardware that meaningfully shape my workflow.
+**Writing Stack:** Perplexity for search, ResearchRabbit for citation maps, Elicit for extraction, NotebookLM for grounding, and Antigravity for orchestration.
 
-When I fill it in, I will care more about stability, comfort, and day-to-day value than raw specs alone.
+<CardGrid>
+  <LinkCard title="Antigravity" href="#" />
+  <LinkCard title="ResearchRabbit" href="https://www.researchrabbit.ai/" />
+  <LinkCard title="Litmaps" href="https://www.litmaps.com/" />
+  <LinkCard title="Elicit" href="https://elicit.com/" />
+  <LinkCard title="Scite.ai" href="https://scite.ai/" />
+  <LinkCard title="NotebookLM" href="https://notebooklm.google/" />
+  <LinkCard title="Perplexity" href="https://www.perplexity.ai/" />
+</CardGrid>
 
-- Name:
-- What I use it for:
-- Why I keep using it:
-- Notes / alternatives:
+## Offline Stack {#offline-stack}
 
-## Software
+**Offline Stack:** Chinese knot cord, shuttlecock, a cue, LEGO Technic, and Keep.
 
-This section will cover the OS utilities, developer tools, writing tools, learning tools, and other software that has become part of my real daily setup.
-
-What matters most to me is whether a tool keeps me clear and effective over the long run, not just how many features it advertises.
-
-- Name:
-- What I use it for:
-- Why I keep using it:
-- Notes / alternatives:
-
-## Services
-
-This section will list the online services I pay for or rely on continuously, including cloud tools, subscriptions, collaboration services, and other digital infrastructure.
-
-As I expand it, I want to be explicit about which services are long-term keepers and which ones are only useful for a specific phase.
-
-- Name:
-- What I use it for:
-- Why I keep using it:
-- Notes / alternatives:
-
-## Lifestyle
-
-Work quality is shaped by lifestyle as much as by tools. This section is for the everyday items and habits I keep around because they genuinely improve how I live and work.
-
-These entries may be less technical, but they often say more about how I manage energy, environment, and rhythm.
-
-- Name:
-- What I use it for:
-- Why I keep using it:
-- Notes / alternatives:
+<CardGrid>
+  <LinkCard title="Chinese Knot Cord" href="#" />
+  <LinkCard title="Shuttlecock" href="#" />
+  <LinkCard title="Cue" href="#" />
+  <LinkCard title="LEGO Technic" href="https://www.lego.com/themes/technic" />
+  <LinkCard title="Keep" href="https://www.gotokeep.com/" />
+</CardGrid>
