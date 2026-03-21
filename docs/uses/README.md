@@ -42,6 +42,7 @@ description: 我日常依赖的几套装备包。
 
 <CardGrid>
   <LinkCard title="Antigravity" href="#" />
+  <LinkCard title="自建 Agent" href="#" />
   <LinkCard title="ResearchRabbit" href="https://www.researchrabbit.ai/" />
   <LinkCard title="Litmaps" href="https://www.litmaps.com/" />
   <LinkCard title="Elicit" href="https://elicit.com/" />
@@ -52,7 +53,7 @@ description: 我日常依赖的几套装备包。
 
 ## 离线回血包 {#offline-stack}
 
-[离线回血包]：中国结丝线、毽球、台球杆、LEGO 机械组、Keep 健身。
+中国结丝线、毽球、台球杆、LEGO 机械组、Keep 健身。
 
 <CardGrid>
   <LinkCard title="中国结丝线" href="#" />

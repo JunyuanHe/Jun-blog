@@ -10,13 +10,14 @@ The stacks I rely on day to day.
 
 ## Startup Stack {#startup-stack}
 
-**Startup Stack:** Domain on Wanwang, DNS on Cloudflare, frontend on Vercel, backend on Render.
+**Startup Stack:** Domain on Wanwang, DNS on Cloudflare, frontend on Vercel, backend on Render, data on Neon.
 
 <CardGrid>
   <LinkCard title="Wanwang" href="https://www.alibabacloud.com/domain" />
   <LinkCard title="Cloudflare" href="https://www.cloudflare.com/" />
   <LinkCard title="Vercel" href="https://vercel.com/" />
   <LinkCard title="Render" href="https://render.com/" />
+  <LinkCard title="Neon" href="https://neon.tech/" />
 </CardGrid>
 
 ## Quant Stack {#quant-stack}
@@ -31,10 +32,11 @@ The stacks I rely on day to day.
 
 ## Writing Stack {#writing-stack}
 
-**Writing Stack:** Perplexity for search, ResearchRabbit for citation maps, Elicit for extraction, NotebookLM for grounding, and Antigravity for orchestration.
+**Writing Stack:** Perplexity for search, ResearchRabbit and Litmaps for citation maps, Elicit and Scite.ai for extraction, NotebookLM for grounding, and a custom Agent in Antigravity for orchestration.
 
 <CardGrid>
   <LinkCard title="Antigravity" href="#" />
+  <LinkCard title="Custom Agent" href="#" />
   <LinkCard title="ResearchRabbit" href="https://www.researchrabbit.ai/" />
   <LinkCard title="Litmaps" href="https://www.litmaps.com/" />
   <LinkCard title="Elicit" href="https://elicit.com/" />
