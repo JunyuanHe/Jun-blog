@@ -104,6 +104,8 @@ Before long, people return to the familiar rhythm. Things keep moving. Life keep
 
 And yet sometimes, in some unguarded moment, those unanswered questions rise again.
 
+> Within the limited time we have, are we gradually moving closer to the life we actually want?
+
 They are not in a hurry to be resolved.
 
 They simply remain there, quietly.
