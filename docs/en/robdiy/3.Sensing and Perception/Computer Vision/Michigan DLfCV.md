@@ -1,7 +1,7 @@
 ---
 title: 'UMich EECS 498-007 / 598-005: Deep Learning for Computer Vision'
 createTime: 2025/06/25 19:13:59
-permalink: /en/robdiy/ov0w1ykp_en/
+permalink: /en/robdiy/ov0w1ykp/
 ---
 
 - Course website: [Winter2022](https://web.eecs.umich.edu/~justincj/teaching/eecs498/WI2022/)

@@ -1,7 +1,7 @@
 ---
 title: 'Stanford CS131: Computer Vision: Foundations and Applications'
 createTime: 2025/07/08 13:45:12
-permalink: /en/robdiy/dogyhks1_en/
+permalink: /en/robdiy/dogyhks1/
 ---
 
 - Course website: [winter25](https://stanford-cs131.github.io/winter2025/)

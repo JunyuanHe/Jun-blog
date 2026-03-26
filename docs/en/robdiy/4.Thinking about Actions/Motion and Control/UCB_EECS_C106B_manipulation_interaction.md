@@ -1,7 +1,7 @@
 ---
 title: 'UCB EECS C106B/206B: Robotic Manipulation and Interaction'
 createTime: 2025/06/26 13:36:30
-permalink: /en/robdiy/vtcmccjy_en/
+permalink: /en/robdiy/vtcmccjy/
 ---
 
 - Course website: [Spring23](https://ucb-ee106.github.io/106b-sp23site/)

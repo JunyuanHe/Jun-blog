@@ -1,7 +1,7 @@
 ---
 title: QUT Robot Academy Master Class
 createTime: 2025/06/26 11:29:47
-permalink: /robdiy/v4v0rrla_en/
+permalink: /en/robdiy/v4v0rrla/
 ---
 
 An undergraduate-level introductory robotics course taught by Professor Peter Corke.

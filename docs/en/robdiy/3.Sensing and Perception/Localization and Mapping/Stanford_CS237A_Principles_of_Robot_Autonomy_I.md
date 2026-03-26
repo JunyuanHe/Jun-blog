@@ -1,7 +1,7 @@
 ---
 title: 'Stanford CS237A: Principles of Robot Autonomy I'
 createTime: 2025/06/27 20:16:36
-permalink: /en/robdiy/3diju6ci_en/
+permalink: /en/robdiy/3diju6ci/
 ---
 
 ::: info

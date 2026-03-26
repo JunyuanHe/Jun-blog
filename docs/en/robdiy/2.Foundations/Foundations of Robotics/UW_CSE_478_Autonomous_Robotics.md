@@ -1,7 +1,7 @@
 ---
 title: 'UW CSE 478: Autonomous Robotics'
 createTime: 2025/06/27 19:48:35
-permalink: /en/robdiy/t6hlcww8_en/
+permalink: /en/robdiy/t6hlcww8/
 ---
 
 - Course website: [spring23](https://courses.cs.washington.edu/courses/cse478/23sp/)

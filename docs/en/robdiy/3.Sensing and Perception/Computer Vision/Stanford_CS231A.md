@@ -1,7 +1,7 @@
 ---
 title: 'Stanford CS231A: Computer Vision, From 3D Perception to 3D Reconstruction and beyond'
 createTime: 2025/07/08 13:31:56
-permalink: /en/robdiy/159ajocg_en/
+permalink: /en/robdiy/159ajocg/
 ---
 
 - Course website: [fall25](https://web.stanford.edu/class/cs231a/)
