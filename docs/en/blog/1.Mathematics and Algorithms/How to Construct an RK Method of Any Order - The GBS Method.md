@@ -1,7 +1,7 @@
 ---
 title: "How to Construct an RK Method of Any Order? The GBS Method"
 createTime: 2025/11/25 14:03:42
-permalink: /article/s5lpmere_en/
+permalink: /en/article/s5lpmere/
 tags:
   - Numerical Analysis
   - RK
@@ -81,4 +81,3 @@ The main lesson is simple:
 > High order does not always need to be designed all at once. Sometimes it can be built by stacking structure on top of a very simple core method.
 
 That is exactly what GBS does: midpoint stepping plus Richardson extrapolation, organized in a way that produces arbitrarily high even-order one-step schemes.
-

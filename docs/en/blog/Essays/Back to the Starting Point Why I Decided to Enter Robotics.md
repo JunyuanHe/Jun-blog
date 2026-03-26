@@ -1,7 +1,7 @@
 ---
 title: "Back to the Starting Point: Why I Decided to Enter Robotics"
 createTime: 2025/06/01 13:57:17
-permalink: /article/y0pcl757_en/
+permalink: /en/article/y0pcl757/
 ---
 
 There is exactly one year left before graduation, and my master's studies are gradually approaching their end. I started asking myself seriously: What do I actually want to do after graduation? Academia or industry? Which direction should I commit to?
@@ -69,4 +69,3 @@ I once wanted to become a pharmaceutical scientist. I once imagined becoming a r
 This was not an easy decision, but I think I am finally ready.
 
 I want to enter the robotics industry. I want to keep moving forward in this direction, keep learning, and keep building. Whether the road turns out to be winding or long, I hope it will prove worth walking.
-

@@ -3,7 +3,7 @@ title: Installation and configuration of Apache
 tags: 
   - Apache
 createTime: 2025/03/04 21:41:50
-permalink: /article/f8pj1hl6_en/
+permalink: /en/article/f8pj1hl6/
 ---
 
 install httpd apache service:
@@ -25,4 +25,3 @@ Restart Apache:
 ```bash
 sudo systemctl restart httpd.service
 ```
-

@@ -1,7 +1,7 @@
 ---
 title: Why Your Strategy Looks Great on Paper but Bleeds in Live Trading Blame the Penny-Pincher in the Quant Black Box
 createTime: 2026/03/26 14:15:03
-permalink: /blog/r4v5fuvd_en/
+permalink: /en/blog/r4v5fuvd/
 tags:
   - Quantitative Trading
 ---

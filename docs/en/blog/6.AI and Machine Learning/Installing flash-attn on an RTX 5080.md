@@ -1,7 +1,7 @@
 ---
 title: Installing flash-attn on an RTX 5080
 createTime: 2025/11/24 20:58:06
-permalink: /article/o0lqcpqr_en/
+permalink: /en/article/o0lqcpqr/
 tags:
   - LLM
 ---

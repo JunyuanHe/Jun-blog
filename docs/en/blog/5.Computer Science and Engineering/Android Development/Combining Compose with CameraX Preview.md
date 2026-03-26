@@ -1,7 +1,7 @@
 ---
 title: Combining Compose with CameraX Preview
 createTime: 2025/12/23 14:43:46
-permalink: /blog/pxexkzn5_en/
+permalink: /en/blog/pxexkzn5/
 tags:
   - Android
 ---

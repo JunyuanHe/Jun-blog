@@ -1,7 +1,7 @@
 ---
 title: Compose Layout Basics and UI Control
 createTime: 2025/12/23 14:46:40
-permalink: /blog/1m2k6hme_en/
+permalink: /en/blog/1m2k6hme/
 tags:
   - Android
 ---

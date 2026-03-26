@@ -1,7 +1,7 @@
 ---
 title: R Basics
 createTime: 2021/02/19 15:18:24
-permalink: /article/12yjuoys_en/
+permalink: /en/article/12yjuoys/
 tags:
   - R
 ---

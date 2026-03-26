@@ -1,7 +1,7 @@
 ---
 title: Why Every Quant System Needs a Resident Paranoid
 createTime: 2026/03/26 14:08:52
-permalink: /blog/wgqbrrli_en/
+permalink: /en/blog/wgqbrrli/
 tags:
   - Quantitative Trading
 ---

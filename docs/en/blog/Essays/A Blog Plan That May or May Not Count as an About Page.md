@@ -1,7 +1,7 @@
 ---
 title: A Blog Plan That May or May Not Count as an About Page
 createTime: 2020/08/24 11:02:44
-permalink: /article/p9c1jk3f_en/
+permalink: /en/article/p9c1jk3f/
 ---
 
 When I first built this site, I did not really have a clear plan for the blog. I did not know what to write on an "About" page, so in the end I left nothing there except the date the site was created. Careful readers may also notice that the homepage only had a title and no site description at all.
@@ -46,4 +46,3 @@ Mainly:
 ### Writing method
 
 My current idea is to study during the day, write down key points on paper for non-computer topics, and organize the day's learning at night as a form of review. For computer-related material, since it usually involves code, I will probably record it as I go.
-

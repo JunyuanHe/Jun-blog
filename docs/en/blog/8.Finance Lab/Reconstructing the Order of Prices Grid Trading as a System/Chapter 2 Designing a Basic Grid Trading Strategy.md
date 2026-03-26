@@ -1,7 +1,7 @@
 ---
 title: Chapter 2 Designing a Basic Grid Trading Strategy
 createTime: 2025/10/07 13:13:48
-permalink: /article/jtaacs8s_en/
+permalink: /en/article/jtaacs8s/
 tags:
   - Grid Trading
 ---
@@ -82,4 +82,3 @@ This makes the basic trade-off very clear:
 A basic grid system is not just a set of orders. It is a parameterized structure.
 
 Its performance depends on whether the chosen range, spacing, layer count, and capital allocation are aligned with the volatility characteristics of the traded asset.
-

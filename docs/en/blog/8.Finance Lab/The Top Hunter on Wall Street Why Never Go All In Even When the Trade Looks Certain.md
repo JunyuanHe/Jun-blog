@@ -1,7 +1,7 @@
 ---
 title: The Top Hunter on Wall Street Why Never Go All In Even When the Trade Looks Certain
 createTime: 2026/03/26 13:57:37
-permalink: /blog/qryzx881_en/
+permalink: /en/blog/qryzx881/
 tags:
   - Quantitative Trading
 ---

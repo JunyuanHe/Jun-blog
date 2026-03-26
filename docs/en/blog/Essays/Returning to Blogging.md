@@ -1,7 +1,7 @@
 ---
 title: Returning to Blogging
 createTime: 2025/03/05 13:25:14
-permalink: /article/6kfei49g_en/
+permalink: /en/article/6kfei49g/
 ---
 
 In the blink of an eye, five years have passed. When I think back to the summer of 2020, I was still just a student moving from freshman to sophomore year, excited and curious enough to build a blog of my own. At first I wrote the occasional knowledge summary. But before long, aside from later building an exercise-sharing platform for classmates in the mathematics department, the blog stopped updating entirely.
@@ -17,4 +17,3 @@ As for blog generators, I used Hexo back then. It was decent, but it also expose
 In any case, I am back. I have picked up blogging again.
 
 At least for these past two days, I have had things worth writing down.
-

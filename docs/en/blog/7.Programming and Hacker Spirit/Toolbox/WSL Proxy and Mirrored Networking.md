@@ -1,7 +1,7 @@
 ---
 title: WSL Proxy and Mirrored Networking
 createTime: 2025/11/24 15:20:14
-permalink: /article/d7rdvig7_en/
+permalink: /en/article/d7rdvig7/
 tags:
   - WSL
 ---

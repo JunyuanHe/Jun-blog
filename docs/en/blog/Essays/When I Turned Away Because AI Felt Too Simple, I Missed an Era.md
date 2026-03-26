@@ -1,7 +1,7 @@
 ---
 title: When I Turned Away Because AI Felt Too Simple, I Missed an Era
 createTime: 2025/10/23 20:20:14
-permalink: /article/9izae7fg_en/
+permalink: /en/article/9izae7fg/
 ---
 
 ### How one mistaken judgment reshaped the way I think about technology, the future, and myself
@@ -19,4 +19,3 @@ Looking back, I now understand that what I lost was not a technical skill, but t
 I cannot go back to that year. But I can change the way I look at the future. I have learned to ask different questions: Is this technology solving a real social need? Does it have leverage for large-scale growth? Could its future form become much larger than what it looks like today? Instead of dismissing something as "too simple," I now try to understand what it may become. Many forces that eventually reshape the world do not look impressive at first glance. They grow in ways we do not yet know how to read. The only thing we can do is give them room to grow, and train ourselves to recognize that growth.
 
 I once missed an era because I said, "This is too simple." Now I understand that what truly separates people is not momentary cleverness, but the ability to sense potential and give the future time and space to mature. If you are facing a new trend now, one that seems rough, immature, or inelegant, do not rush to turn away. It may be the beginning of the next wave. The ticket to the next era might already be in front of you. The only question is whether you will step in, or once again say "too simple" and walk away.
-

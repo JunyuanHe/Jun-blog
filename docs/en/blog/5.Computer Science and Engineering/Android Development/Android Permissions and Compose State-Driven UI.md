@@ -1,7 +1,7 @@
 ---
 title: Android Permissions and Compose State-Driven UI
 createTime: 2025/12/23 14:17:20
-permalink: /blog/cd7mkots_en/
+permalink: /en/blog/cd7mkots/
 tags:
   - Android
 ---

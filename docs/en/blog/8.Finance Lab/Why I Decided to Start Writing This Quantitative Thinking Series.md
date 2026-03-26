@@ -1,7 +1,7 @@
 ---
 title: Why I Decided to Start Writing This Quantitative Thinking Series
 createTime: 2026/03/23 17:23:19
-permalink: /blog/od3et8ix_en/
+permalink: /en/blog/od3et8ix/
 ---
 
 This article had actually been sitting in my drafts for quite a while. I just never published it. Then, over the past few days, the market went through another round of decline, and the impact on me was significant. A move like today's naturally has its direct triggers. But more than explaining a single selloff, what matters to me is something else: times like this make it especially clear how important a rational framework really is. The market will not stop moving just because emotions are running high, but our judgment can very easily be pulled off course by emotion. So I decided not to wait any longer. I will start here and write this "Quantitative Thinking" series properly.

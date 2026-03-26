@@ -1,7 +1,7 @@
 ---
 title: Stop Mythologizing Quant Trading It Is Just Common Sense Taken to the Extreme
 createTime: 2026/03/26 13:19:00
-permalink: /blog/q3cyi9xz_en/
+permalink: /en/blog/q3cyi9xz/
 tags:
   - Quantitative Trading
 ---

@@ -1,7 +1,7 @@
 ---
 title: BPE Tokenizer Implementation
 createTime: 2025/10/22 19:28:57
-permalink: /article/dirq0u1t_en/
+permalink: /en/article/dirq0u1t/
 tags:
   - LLM
 ---
@@ -121,4 +121,3 @@ Once training is done, encoding applies the learned merges in the learned order.
 The main point of BPE is not that the algorithm is complicated. It is the opposite:
 
 > BPE is powerful precisely because it turns tokenization into a simple data-driven compression-like process.
-

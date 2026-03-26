@@ -1,7 +1,7 @@
 ---
 title: Using Julia Projects to Manage Dependencies
 createTime: 2025/11/19 19:30:37
-permalink: /article/j0qau56n_en/
+permalink: /en/article/j0qau56n/
 tags:
   - Julia
 ---

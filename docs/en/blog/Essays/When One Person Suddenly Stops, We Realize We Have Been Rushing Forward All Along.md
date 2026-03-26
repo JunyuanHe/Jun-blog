@@ -1,7 +1,7 @@
 ---
 title: When One Person Suddenly Stops, We Realize We Have Been Rushing Forward All Along
 createTime: 2026/03/25 20:50:13
-permalink: /blog/em3n2k4x_en/
+permalink: /en/blog/em3n2k4x/
 ---
 
 That day was supposed to be an ordinary one.

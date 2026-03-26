@@ -1,7 +1,7 @@
 ---
 title: "Phase 0 Summary: How I Organized a CameraX + Compose App"
 createTime: 2025/12/23 15:02:42
-permalink: /blog/fv3v737c_en/
+permalink: /en/blog/fv3v737c/
 tags:
   - Android
 ---

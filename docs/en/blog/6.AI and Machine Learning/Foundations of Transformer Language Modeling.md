@@ -1,7 +1,7 @@
 ---
 title: Foundations of Transformer Language Modeling
 createTime: 2025/11/21 09:27:48
-permalink: /article/hpc1j7ry_en/
+permalink: /en/article/hpc1j7ry/
 tags:
   - LLM
 ---
@@ -124,4 +124,3 @@ $$
 If I had to summarize the whole picture in one sentence, it would be this:
 
 > A decoder-only Transformer is a machine that repeatedly decides what each token should attend to, then updates the representation accordingly, while never looking into the future.
-

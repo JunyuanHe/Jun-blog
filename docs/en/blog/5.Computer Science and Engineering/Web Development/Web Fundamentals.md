@@ -1,7 +1,7 @@
 ---
 title: Web Fundamentals
 createTime: 2025/09/09 09:02:02
-permalink: /article/3rpn8e6z_en/
+permalink: /en/article/3rpn8e6z/
 tags:
   - Web
 ---
@@ -123,4 +123,3 @@ These concepts are basic, but they form the foundation of all web development:
 - URLs describe where a resource is;
 - HTTP defines how browsers and servers talk;
 - TCP provides the transport layer beneath that communication.
-

@@ -1,7 +1,7 @@
 ---
 title: Database Systems Review
 createTime: 2021/01/08 9:59:28
-permalink: /article/kbs4urlf_en/
+permalink: /en/article/kbs4urlf/
 tags:
   - SQL
 ---
@@ -131,4 +131,3 @@ This review only sketches the backbone of introductory database theory, but the 
 2. understand data models, especially the relational model;
 3. understand relational algebra and SQL;
 4. understand integrity, transactions, concurrency, recovery, and security.
-

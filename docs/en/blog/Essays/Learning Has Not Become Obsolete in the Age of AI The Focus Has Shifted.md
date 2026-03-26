@@ -1,7 +1,7 @@
 ---
 title: Learning Has Not Become Obsolete in the Age of AI The Focus Has Shifted
 createTime: 2026/03/12 17:14:14
-permalink: /blog/xpc53m9s_en/
+permalink: /en/blog/xpc53m9s/
 ---
 
 Lately, I have been using AI almost every day to deal with problems at work. There are things I used to know very little about, yet now, as long as I can describe the task clearly, AI can often give me a workable starting point within minutes. It has dramatically shortened the distance between "I do not know how" and "at least I can make a first version." Experiences like that make it easy to feel that many old barriers are rapidly losing their importance.

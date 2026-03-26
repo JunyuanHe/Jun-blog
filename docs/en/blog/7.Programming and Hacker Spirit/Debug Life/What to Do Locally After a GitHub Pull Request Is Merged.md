@@ -1,7 +1,7 @@
 ---
 title: What to Do Locally After a GitHub Pull Request Is Merged
 createTime: 2025/12/26 20:15:26
-permalink: /blog/y3o3vq5s_en/
+permalink: /en/blog/y3o3vq5s/
 ---
 
 ```git

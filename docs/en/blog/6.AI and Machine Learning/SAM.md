@@ -1,7 +1,7 @@
 ---
 title: SAM
 createTime: 2025/08/08 09:32:46
-permalink: /article/abqjh4xj_en/
+permalink: /en/article/abqjh4xj/
 tags:
   - ViT
 ---
@@ -117,4 +117,3 @@ My main takeaway is that SAM succeeds not only because of scale, but also becaus
 > Instead of asking the model to solve one fixed segmentation task, SAM asks it to respond to prompts.
 
 That shift makes segmentation more interactive, more modular, and more reusable.
-

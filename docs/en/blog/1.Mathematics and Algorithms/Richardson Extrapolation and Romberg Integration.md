@@ -1,7 +1,7 @@
 ---
 title: "Want to Get High Order? A Detailed Guide to Richardson Extrapolation and Romberg Integration"
 createTime: 2025/11/17 16:43:00
-permalink: /article/02konsuj_en/
+permalink: /en/article/02konsuj/
 tags:
   - Numerical Analysis
 ---
@@ -95,4 +95,3 @@ The philosophy behind both methods is worth remembering:
 > If you understand the shape of the error, you can often cancel it systematically instead of merely refining the mesh blindly.
 
 Richardson extrapolation is the general idea. Romberg integration is one of its cleanest and most beautiful realizations.
-

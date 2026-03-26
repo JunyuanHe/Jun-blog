@@ -1,7 +1,7 @@
 ---
 title: Chapter 1 The Principles and Philosophy of Grid Trading
 createTime: 2025/10/07 09:01:19
-permalink: /article/tj7zl22z_en/
+permalink: /en/article/tj7zl22z/
 tags:
   - Grid Trading
 ---
@@ -75,4 +75,3 @@ Every buy-low and sell-high operation is a dynamic rebalance of exposure.
 ## Final remarks
 
 Grid trading is not magic. It is a structured response to uncertainty.
-

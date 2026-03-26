@@ -3,7 +3,7 @@ title: Enable HTTPS on Apache by uploading SSL certificate
 tags: 
   - Apache
 createTime: 2025/03/05 14:31:17
-permalink: /article/gbz2h1s7_en/
+permalink: /en/article/gbz2h1s7/
 ---
 
 ## Enable HTTPS by uploading SSL certificate

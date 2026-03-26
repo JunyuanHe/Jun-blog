@@ -4,7 +4,7 @@ tags:
   - Vuepress
   - Github pages
 createTime: 2025/05/27 13:58:47
-permalink: /article/3i6eeadd_en/
+permalink: /en/article/3i6eeadd/
 
 ---
 

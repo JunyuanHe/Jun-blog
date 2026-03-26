@@ -1,7 +1,7 @@
 ---
 title: Mathematica Linear Algebra Basics
 createTime: 2025/09/14 12:43:23
-permalink: /article/qqizy8hm_en/
+permalink: /en/article/qqizy8hm/
 tags:
   - Mathematica
 ---

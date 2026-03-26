@@ -1,7 +1,7 @@
 ---
 title: Using Table in Mathematica
 createTime: 2025/09/15 12:55:22
-permalink: /article/uv6aw37b_en/
+permalink: /en/article/uv6aw37b/
 tags:
   - Mathematica
 ---

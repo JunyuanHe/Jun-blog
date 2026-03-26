@@ -3,7 +3,7 @@ title: Apache Virtual Host
 tags: 
   - Apache
 createTime: 2025/03/06 17:35:53
-permalink: /article/afq0czul_en/
+permalink: /en/article/afq0czul/
 
 ---
 
@@ -77,4 +77,3 @@ sudo systemctl restart apache2
 ### 4. Point the Domain to Your Server
 
 Update DNS records at your domain registrar by adding an A record to point the domain to your server’s public IP. Apache will automatically use the corresponding virtual host configuration based on the accessed domain.
-

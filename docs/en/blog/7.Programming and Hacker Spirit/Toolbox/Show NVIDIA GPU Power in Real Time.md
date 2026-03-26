@@ -1,7 +1,7 @@
 ---
 title: Show NVIDIA GPU Power in Real Time
 createTime: 2025/09/15 11:24:10
-permalink: /article/x40uuqco_en/
+permalink: /en/article/x40uuqco/
 ---
 
 People often say GPUs consume a lot of power, but how much exactly? Sometimes we want to know the GPU’s power draw and temperature under different workloads, ideally with some real-time monitor. In Windows Task Manager, you can see GPU usage and temperature, but not power consumption.

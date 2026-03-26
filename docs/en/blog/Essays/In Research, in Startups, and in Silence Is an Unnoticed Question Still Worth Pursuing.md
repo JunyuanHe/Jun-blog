@@ -1,7 +1,7 @@
 ---
 title: "In Research, in Startups, and in Silence: Is an Unnoticed Question Still Worth Pursuing?"
 createTime: 2025/11/09 16:09:29
-permalink: /article/ufum6gv7_en/
+permalink: /en/article/ufum6gv7/
 ---
 
 Recently, I came across a short exchange that stayed with me for a long time.
@@ -86,4 +86,3 @@ Because sometimes real value is born precisely out of silence.
 - The value of entrepreneurship lies not in pursuing truth for its own sake, but in solving problems.
 - The people with the most power are often those who can make truth valuable, and let value return to truth.
 :::
-

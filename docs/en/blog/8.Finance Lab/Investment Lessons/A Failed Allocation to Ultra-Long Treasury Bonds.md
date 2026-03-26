@@ -1,7 +1,7 @@
 ---
 title: "A Failed Allocation to Ultra-Long Treasury Bonds: A Post-Mortem of Misjudging a 'Hedge Asset'"
 createTime: 2025/12/09 15:04:51
-permalink: /article/q0d2e3rh_en/
+permalink: /en/article/q0d2e3rh/
 tags:
   - Treasury Bond
 ---
@@ -93,4 +93,3 @@ This experience left me with several practical lessons:
 The mistake was not purely technical. It was cognitive.
 
 I thought I was introducing balance into the portfolio. In reality, I introduced a new single-factor exposure that I did not understand deeply enough.
-

@@ -1,7 +1,7 @@
 ---
 title: The Ceiling of a Tool Depends on the Structure of the Mind Using It
 createTime: 2025/12/11 21:14:47
-permalink: /article/hf3l19ma_en/
+permalink: /en/article/hf3l19ma/
 ---
 
 Recently, while preparing a talk on generative models, I tried using AI to help draft the lecture notes. I thought it would be easy. After all, AI can write articles, code, and reports. But the result was very different from what I expected.
@@ -67,4 +67,3 @@ So the real question is rarely how to write a more clever prompt, or how to chas
 In the end, I realized that the limit of AI is not primarily the model's own limit. More often, it is the limit of the structure I can provide to it.
 
 So instead of asking AI to help me teach better, I increasingly see teaching itself as the process of building structure. When the structure becomes clear enough, the tool stops being an obstacle and becomes what it was always capable of being: an amplifier.
-

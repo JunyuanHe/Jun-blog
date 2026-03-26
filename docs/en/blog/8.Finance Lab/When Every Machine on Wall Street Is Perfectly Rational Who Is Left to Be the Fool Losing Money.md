@@ -1,7 +1,7 @@
 ---
 title: When Every Machine on Wall Street Is Perfectly Rational Who Is Left to Be the Fool Losing Money
 createTime: 2026/03/26 14:20:13
-permalink: /blog/9u1sb7u8_en/
+permalink: /en/blog/9u1sb7u8/
 tags:
   - Quantitative Trading
 ---

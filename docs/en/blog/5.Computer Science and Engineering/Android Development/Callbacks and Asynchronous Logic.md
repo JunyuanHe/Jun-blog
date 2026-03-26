@@ -1,7 +1,7 @@
 ---
 title: Callbacks and Asynchronous Logic
 createTime: 2025/12/23 14:55:51
-permalink: /blog/lz6n4fua_en/
+permalink: /en/blog/lz6n4fua/
 tags:
   - Android
 ---
