@@ -18,6 +18,7 @@ export const zhNavbar = defineNavbarConfig([
     icon: 'gis:map-route', 
     items: [
       { text: '机器人自学指南', link: '/zh/robdiy/README.md', icon: 'mage:robot-wink' },
+      { text: '人工智能学习路线', link: '/zh/ai/README.md', icon: 'carbon:machine-learning-model' },
       { text: '连接更大的图景', link: '/zh/courses/README.md', icon: 'mdi:book-open-page-variant-outline' },
     ]
   },
@@ -41,6 +42,7 @@ export const enNavbar = defineNavbarConfig([
     icon: 'gis:map-route', 
     items: [
       { text: 'Robotics Self-Learning Map', link: '/robdiy/README.md', icon: 'mage:robot-wink' },
+      { text: 'AI Learning Map', link: '/ai/README.md', icon: 'carbon:machine-learning-model' },
       { text: 'Connecting to the Bigger Picture', link: '/courses/README.md', icon: 'mdi:book-open-page-variant-outline' },
     ]
   },
