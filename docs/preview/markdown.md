@@ -4,42 +4,28 @@ tags:
   - markdown
 draft: true
 createTime: 2025/05/26 19:58:18
-permalink: /article/b5h5ls7g/
+permalink: /article/j06tuyj3/
 ---
 
-## 标题H2
+## Heading 2
 
-### 标题H3
+### Heading 3
 
-#### 标题H4
+#### Heading 4
 
-##### 标题H5
+##### Heading 5
 
-###### 标题H6
+###### Heading 6
 
-## 标题2 Badge <Badge type="tip" text="Badge" />
+Bold: **Bold text**
 
-### 标题3 Badge <Badge type="warning" text="Badge" />
+Italic: _Italic text_
 
-#### 标题4 Badge <Badge type="danger" text="Badge" />
+~~Deleted text~~
 
-正文内容。
+Content ==Highlight==
 
-`@property` CSS at-rule是 [CSS Houdini API](https://developer.mozilla.org/zh-CN/docs/Web/Guide/Houdini)
-的一部分，它允许开发者显式地定义他们的 [CSS 自定义属性](https://developer.mozilla.org/zh-CN/docs/Web/CSS/--*),
-允许进行属性类型检查、设定默认值以及定义该自定义属性是否可以被继承。
-
-`@property` 的出现，极大的增强了 CSS 的能力。
-
-加粗：**加粗文字**
-
-斜体： _斜体文字_
-
-~~删除文字~~
-
-内容 ==标记==
-
-数学表达式： $-(2^{n-1})$ ~ $2^{n-1} -1$
+Mathematical expression: $-(2^{n-1})$ ~ $2^{n-1} -1$
 
 $\frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right)
 = \left(\frac {y^{\omega}} {\omega}\right) \left\{(\log y)^r + \sum_{i=1}^r \frac {(-1)^ Ir \cdots (r-i+1) (\log y)^{ri}} {\omega^i} \right\}$
@@ -49,25 +35,25 @@ $\frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right)
 H~2~O
 
 ::: center
-内容居中
+content center
 :::
 
 ::: right
-内容右对齐
+content right
 :::
 
-- 无序列表1
-- 无序列表2
-- 无序列表3
+- Unordered List 1
+- Unordered List 2
+- Unordered List 3
 
-1. 有序列表1
-2. 有序列表2
-3. 有序列表3
+1. Ordered List 1
+2. Ordered List 2
+3. Ordered List 3
 
-- [ ] 任务列表1
-- [ ] 任务列表2
-- [x] 任务列表3
-- [x] 任务列表4
+- [ ] Task List 1
+- [ ] Task List 2
+- [x] Task List 3
+- [x] Task List 4
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -75,15 +61,13 @@ H~2~O
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-> 引用内容
+> quote content
 >
-> 引用内容
+> quote content
 
-[链接](/)
+[links](/)
 
-[外部链接](https://github.com/pengzhanbo)
-
-![plume](/plume.svg)
+[outside links](https://github.com/pengzhanbo)
 
 **Badge：**
 
@@ -92,7 +76,7 @@ H~2~O
 - <Badge type="warning" text="warning badge" />
 - <Badge type="danger" text="danger badge" />
 
-**图标：**
+**icons：**
 
 - home - <Icon name="material-symbols:home" color="currentColor" size="1em" />
 - vscode - <Icon name="skill-icons:vscode-dark" size="2em" />
@@ -100,7 +84,7 @@ H~2~O
 
 **demo wrapper：**
 
-::: demo-wrapper title="示例" no-padding height="200px"
+::: demo-wrapper title="Demo" no-padding height="200px"
 <style scoped>
 .open-door {
   display: flex;
@@ -119,7 +103,7 @@ H~2~O
 
 :::
 
-**代码：**
+**code block：**
 
 ```js whitespace
 const a = 1
@@ -140,69 +124,7 @@ const obj = {
 }
 ```
 
-**Code Blocks TwoSlash：**
-
-```ts twoslash
-// @errors: 2339
-const welcome = 'Tudo bem gente?'
-const words = welcome.contains(' ')
-```
-
-```ts twoslash
-import express from 'express'
-const app = express()
-app.get('/', (req, res) => {
-  res.send
-})
-app.listen(3000)
-```
-
-```ts twoslash
-import { createHighlighter } from 'shiki'
-
-const highlighter = await createHighlighter({ themes: ['nord'], langs: ['javascript'] })
-// @log: Custom log message
-const a = 1
-// @error: Custom error message
-const b = 1
-// @warn: Custom warning message
-const c = 1
-// @annotate: Custom annotation message
-```
-
-```ts twoslash
-// @errors: 2540
-interface Todo {
-  title: string
-}
-
-const todo: Readonly<Todo> = {
-  title: 'Delete inactive users'.toUpperCase(),
-//  ^?
-}
-
-todo.title = 'Hello'
-
-Number.parseInt('123', 10)
-//      ^|
-
-//
-//
-```
-
-```vue twoslash
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const count = ref(0)
-</script>
-
-<template>
-  <p>{{ count }}</p>
-</template>
-```
-
-**代码分组：**
+**code groups：**
 
 ::: code-tabs
 @tab tab1
@@ -223,7 +145,7 @@ const c: number = a + b
 
 :::
 
-**代码块高亮：**
+**code highlight：**
 
 ```ts
 function foo() {
@@ -239,7 +161,7 @@ function foo() {
 }
 ```
 
-**代码块聚焦：**
+**code focus：**
 
 ```ts
 function foo() {
@@ -247,11 +169,8 @@ function foo() {
 }
 ```
 
-::: tip 仅标题
-:::
-
-::: note 注释
-注释内容 [link](https://github.com/pengzhanbo) `inline code`
+::: note
+note content [link](https://github.com/pengzhanbo) `inline code`
 
 ```js
 const a = 1
@@ -261,8 +180,8 @@ const c = a + b
 
 :::
 
-::: info 信息
-信息内容 [link](https://github.com/pengzhanbo) `inline code`
+::: info
+content [link](https://github.com/pengzhanbo) `inline code`
 
 ```js
 const a = 1
@@ -272,8 +191,8 @@ const c = a + b
 
 :::
 
-::: tip 提示
-提示内容 [link](https://github.com/pengzhanbo) `inline code`
+::: tip
+content [link](https://github.com/pengzhanbo) `inline code`
 
 ```js
 const a = 1
@@ -283,8 +202,8 @@ const c = a + b
 
 :::
 
-::: warning 警告
-警告内容 [link](https://github.com/pengzhanbo) `inline code`
+::: warning
+content [link](https://github.com/pengzhanbo) `inline code`
 
 ```js
 const a = 1
@@ -294,8 +213,8 @@ const c = a + b
 
 :::
 
-::: caution 错误
-错误内容 [link](https://github.com/pengzhanbo) `inline code`
+::: caution
+content [link](https://github.com/pengzhanbo) `inline code`
 
 ```js
 const a = 1
@@ -305,8 +224,8 @@ const c = a + b
 
 :::
 
-::: important 重要
-重要内容 [link](https://github.com/pengzhanbo) `inline code`
+::: important
+content [link](https://github.com/pengzhanbo) `inline code`
 
 ```js
 const a = 1
@@ -314,11 +233,6 @@ const b = 2
 const c = a + b
 ```
 
-:::
-
-::: details 详细标题
-
-这里是内容。
 :::
 
 **GFM alert：**
@@ -341,9 +255,9 @@ const c = a + b
 > [!important]
 > important
 
-**代码演示：**
+**code demo:**
 
-:::: demo title="常规示例" desc="一个常规示例"
+:::: demo title="Demo" desc="A normal demo"
 
 ::: code-tabs
 @tab HTML
@@ -374,38 +288,38 @@ app.appendChild(window.document.createElement('small')).textContent = a
 :::
 ::::
 
-**选项卡：**
+**tab card：**
 
 ::: tabs
-@tab 标题1
-内容区块
+@tab title 1
+content block
 
-@tab 标题2
-内容区块
+@tab title 2
+content block
 :::
 
 :::: warning
 ::: tabs
-@tab 标题1
-内容区块
+@tab title 1
+content block
 
-@tab 标题2
-内容区块
+@tab title 2
+content block
 :::
 ::::
 
-**脚注：**
+**footnote：**
 
-脚注 1 链接[^first]。
+footnote 1 link[^first]。
 
-脚注 2 链接[^second]。
+footnote 2 link[^second]。
 
-行内的脚注^[行内脚注文本] 定义。
+inline footnote ^[^first] definition。
 
-重复的页脚定义[^second]。
+Repeated footnote definition[^second]。
 
-[^first]: 脚注 **可以包含特殊标记**
+[^first]: footnote **you can contain special mark**
 
-    也可以由多个段落组成
+    also can contain paragraph
 
-[^second]: 脚注文字。
+[^second]: footnote content.

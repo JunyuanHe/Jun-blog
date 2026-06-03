@@ -18,17 +18,17 @@ import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
   base: '/',
-  lang: 'zh-CN',
+  lang: 'en-US',
   locales: {
     '/': {
       title: 'Jun\'s Blog',
-      lang: 'zh-CN',
-      description: '探索未知，分享所思，点亮梦想',
-    },
-    '/en/': {
-      title: 'Jun\'s Blog',
       lang: 'en-US',
       description: 'Discover. Share. Ignite.',
+    },
+    '/zh/': {
+      title: 'Jun\'s Blog',
+      lang: 'zh-CN',
+      description: '探索未知，分享所思，点亮梦想',
     },
   },
 

@@ -1,11 +1,11 @@
 ---
-title: 自定义组件
+title: Custom Component
 tags:
-  - 预览
-  - 组件
+  - preview
+  - component
 draft: true
 createTime: 2025/05/26 19:58:18
-permalink: /article/4ty1jyvq/
+permalink: /article/wcpu8qxh/
 ---
 
 <CustomComponent />

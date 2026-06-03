@@ -6,5 +6,3 @@ permalink: /demo/
 
 - [bar](./bar.md)
 - [foo](./foo.md)
-
-this is a demo.

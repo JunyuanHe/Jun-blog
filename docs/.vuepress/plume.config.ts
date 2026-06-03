@@ -61,14 +61,14 @@ export default defineThemeConfig({
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
         name: 'Jun\'s Blog',
-        description: '探索未知，分享所思，点亮梦想',
+        description: 'Discover. Share. Ignite.',
         // circle: true,
         // location: '',
         // organization: '',
       },
 
-      navbar: zhNavbar,
-      collections: zhCollections,
+      navbar: enNavbar,
+      collections: enCollections,
 
       /**
        * 公告板
@@ -81,21 +81,21 @@ export default defineThemeConfig({
        //   content: '',
        // },
     },
-    '/en/': {
+    '/zh/': {
       /**
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
         name: 'Jun\'s Blog',
-        description: 'Discover. Share. Ignite.',
+        description: '探索未知，分享所思，点亮梦想',
         // circle: true,
         // location: '',
         // organization: '',
       },
 
-      navbar: enNavbar,
-      collections: enCollections,
+      navbar: zhNavbar,
+      collections: zhCollections,
 
       /**
        * 公告板
