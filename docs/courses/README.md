@@ -1,13 +1,13 @@
 ---
-title: 连接更大的图景
+title: Connecting to the Bigger Picture
 createTime: 2025/06/26 09:10:00
 permalink: /courses/
 ---
 
-除了机器人核心课程，在自学的过程中，我也偶尔会遇到一些令我眼前一亮的课程。它们可能不直接属于机器人领域，但在理念、方法或工具上，对我的理解与思考产生了启发。
+Besides the core robotics courses, I occasionally come across some eye-opening courses during my self-study journey. These may not directly belong to the field of robotics, but their ideas, methods, or tools have inspired my understanding and thinking.
 
-这一页整理了这些“意外的收获”——它们不一定系统，也未必和机器人紧密相关，但我认为有趣、有价值，值得收藏与分享。其中有些课程我已经学习过，有些则是我想学、计划学的，先暂时放在这里，供自己和他人日后参考。
+This page collects these "unexpected gains"—they may not be systematic, nor closely related to robotics, but I find them interesting and valuable, worth keeping and sharing. Some of these courses I have already studied, while others are ones I want to learn or plan to learn, so I’m putting them here for future reference for myself and others.
 
 ---
 
-::tabler:sign-left:: 点击左侧侧边栏，开始探索吧！
+::tabler:sign-left:: Click the sidebar on the left to start exploring!
