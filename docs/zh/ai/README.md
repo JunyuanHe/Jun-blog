@@ -1,6 +1,7 @@
 ---
 title: 人工智能学习路线
 permalink: /zh/ai/
+createTime: 2026/06/03 15:30:02
 ---
 
 # 人工智能学习路线

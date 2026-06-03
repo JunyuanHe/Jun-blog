@@ -33,6 +33,14 @@ export const zhCourses = defineCollection({
     sidebar: 'auto',
 })
 
+export const zhAi = defineCollection({
+    type: 'doc',
+    dir: 'ai',
+    title: '人工智能学习路线',
+    linkPrefix: '/ai/',
+    sidebar: 'auto',
+})
+
 export const zhTechExams = defineCollection({
     type: 'doc',
     dir: 'tech-exams',
@@ -61,6 +69,7 @@ export const zhCollections = defineCollections([
   zhBlog,
   zhDemo,
   zhRobDiy,
+  zhAi,
   zhCourses,
   zhTechExams,
   zhLearningNotes,
@@ -101,6 +110,14 @@ export const enCourses = defineCollection({
     sidebar: 'auto',
 })
 
+export const enAi = defineCollection({
+    type: 'doc',
+    dir: 'ai',
+    title: 'AI learning map',
+    linkPrefix: '/ai/',
+    sidebar: 'auto',
+})
+
 export const enLearningNotes = defineCollection({
     type: 'doc',
     dir: 'learning-notes',
@@ -119,6 +136,7 @@ export const enCollections = defineCollections([
     enDemo, 
     enLearningNotes, 
     enRobDiy, 
+    enAi,
     enCourses
 ])
 
