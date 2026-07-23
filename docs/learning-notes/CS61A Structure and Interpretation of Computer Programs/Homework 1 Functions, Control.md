@@ -184,11 +184,13 @@ Hint: If you see 4.0 but want just 4, try using floor division `//` instead of r
 ```python
 def hailstone(n):
     length = 1
+    print(n)
     while n != 1:
         if n % 2 == 0:
             n = n // 2
         else:
             n = 3 * n + 1
+        print(n)
         length += 1
     return length
 ```
