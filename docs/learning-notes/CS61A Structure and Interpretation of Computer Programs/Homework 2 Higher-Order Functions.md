@@ -41,7 +41,7 @@ def product(n, term):
     "*** YOUR CODE HERE ***"
 ```
 
-### Solution
+### My Solution
 
 ```python
 def product(n, term):
@@ -130,7 +130,7 @@ def product_using_accumulate(n, term):
     return ____
 ```
 
-### Solution
+### My Solution
 
 ```python
 def accumulate(fuse, start, n, term):
@@ -166,7 +166,7 @@ def make_repeater(f, n):
     "*** YOUR CODE HERE ***"
 ```
 
-### Solution
+### My Solution
 
 ```python
 def make_repeater(f, n):

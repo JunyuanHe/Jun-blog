@@ -29,7 +29,7 @@ def a_plus_abs_b(a, b):
     return f(a, b)
 ```
 
-### Solution
+### My Solution
 
 ```python
 from operator import add, sub
@@ -70,7 +70,7 @@ Hint: Consider using the max or min function:
 -3
 ```
 
-### Solution
+### My Solution
 
 ```python
 def two_of_three(i, j, k):
@@ -95,7 +95,7 @@ def largest_factor(n):
 ```
 Hint: To check if b evenly divides a, use the expression a % b == 0, which can be read as, "the remainder when dividing a by b is 0."
 
-### Solution 1
+### My Solution 1
 
 Search for factors starting from `n // 2` down to `1`.
 
@@ -107,7 +107,7 @@ def largest_factor(n):
     return factor
 ```
 
-### Solution 2
+### My Solution 2
 
 Search only up to $\sqrt{n}$. 
 Whenever `i` divides `n`, its paired factor `n // i` is the largest proper factor found.
@@ -179,7 +179,7 @@ Hailstone sequences can get quite long! Try `27`. What's the longest you can fin
 Note that if `n == 1` initially, then the sequence is one step long.
 Hint: If you see 4.0 but want just 4, try using floor division `//` instead of regular division `/`.
 
-## Solution
+## My Solution
 
 ```python
 def hailstone(n):
