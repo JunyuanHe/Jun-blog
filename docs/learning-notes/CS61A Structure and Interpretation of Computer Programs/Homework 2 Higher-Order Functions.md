@@ -2,6 +2,7 @@
 title: "Homework 2: Higher-Order Functions"
 createTime: 2026/07/23 13:38:53
 permalink: /learning-notes/khhu79ss/
+draft: true
 ---
 
 Several doctests refer to these functions:
