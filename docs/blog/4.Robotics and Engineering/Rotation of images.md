@@ -9,7 +9,7 @@ Performing arbitrary angle rotations on images is a common task in image process
 
 First, to ensure the rotated image is fully contained within the output image, we need to calculate the size of the output image based on the rotation angle. The following figure illustrates this concept:
 
-![Calculation of the size of expanded image](43569917777104cc228f4b56ba21c1fe.webp)
+![Calculation of the size of expanded image](./43569917777104cc228f4b56ba21c1fe.webp)
 
 So the size of the output image can be calculated as follows:
 $$
@@ -21,7 +21,7 @@ $$
 
 Second, we move the origin of the coordinate system to the center of the image, so that we can rotate the image around its center. The following figure illustrates this concept:
 
-![Relative coordinate system](f263a48e31afef5a02a5de7a4014e2fd.webp)
+![Relative coordinate system](./f263a48e31afef5a02a5de7a4014e2fd.webp)
 
 The center of the original image is at $(x_{sc}, y_{sc}) = \left(\frac{\text{width}-1}{2}, \frac{\text{height}-1}{2}\right)$, and the center of the output image is at $(x_{oc}, y_{oc}) = \left(\frac{\text{output\_width}-1}{2}, \frac{\text{output\_height}-1}{2}\right)$.
 
@@ -52,36 +52,7 @@ Note this inverse rotation is a clockwise rotation, which is the opposite of the
 
 Finally, we can use bilinear interpolation to calculate the pixel value at $(x_s, y_s)$ in the original image. The following figure illustrates this concept:
 
-![bilinear interpolation](0ca9dfb61cb4cb23629dbe0b4a3ef0fb.webp)
-
-A horizontal linear interpolation is performed first, followed by a vertical linear interpolation. The final pixel value is a weighted average of the four neighboring pixels, with weights based on the distances to the neighboring pixels.
-
-$$
-\begin{bmatrix}
-x_s \\
-y_s
-\end{bmatrix}
-=
-\begin{bmatrix}
-\cos(\theta) & -\sin(\theta) \\
-\sin(\theta) & \cos(\theta)
-\end{bmatrix}
-\begin{bmatrix}
-x_o - x_{oc} \\
-y_o - y_{oc}
-\end{bmatrix}
-+
-\begin{bmatrix}
-x_{sc} \\
-y_{sc}
-\end{bmatrix}
-$$
-
-Note this inverse rotation is a clockwise rotation, which is the opposite of the counterclockwise rotation we want to achieve. This is because we are mapping from the output image back to the original image. Also, the rotation matrix is different from the standard rotation matrix because we are using a coordinate system where the y-axis points downwards, which is common in image processing.
-
-Finally, we can use bilinear interpolation to calculate the pixel value at $(x_s, y_s)$ in the original image. The following figure illustrates this concept:
-
-![bilinear interpolation](0ca9dfb61cb4cb23629dbe0b4a3ef0fb.webp)
+![bilinear interpolation](./0ca9dfb61cb4cb23629dbe0b4a3ef0fb.webp)
 
 A horizontal linear interpolation is performed first, followed by a vertical linear interpolation. The final pixel value is a weighted average of the four neighboring pixels, with weights based on the distances to the neighboring pixels.
 

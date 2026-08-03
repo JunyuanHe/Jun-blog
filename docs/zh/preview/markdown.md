@@ -100,7 +100,7 @@ H~2~O
 
 **demo wrapper：**
 
-::: demo-wrapper title="示例" no-padding height="200px"
+::: window title="示例" no-padding height="200px"
 <style scoped>
 .open-door {
   display: flex;

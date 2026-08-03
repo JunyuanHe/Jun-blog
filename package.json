@@ -3,13 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Jun's Blog Description",
-  "packageManager": "pnpm@10.12.4",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild"
-    ]
-  },
+  "packageManager": "pnpm@11.18.0",
   "author": "Junyuan He <hejunyuan01@126.com>",
   "license": "MIT",
   "engines": {
@@ -23,13 +17,10 @@
     "vp-update": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.26",
-    "http-server": "^14.1.1",
-    "sass-embedded": "^1.97.0",
-    "terser": "^5.44.1",
+    "@vuepress/bundler-vite": "2.0.0-rc.30",
     "typescript": "^5.9.3",
-    "vue": "^3.5.25",
-    "vuepress": "2.0.0-rc.26",
-    "vuepress-theme-plume": "1.0.0-rc.183"
+    "vue": "^3.5.40",
+    "vuepress": "2.0.0-rc.30",
+    "vuepress-theme-plume": "1.0.0-rc.204"
   }
 }

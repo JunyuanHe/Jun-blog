@@ -84,7 +84,7 @@ content right
 
 **demo wrapper：**
 
-::: demo-wrapper title="Demo" no-padding height="200px"
+::: window title="Demo" no-padding height="200px"
 <style scoped>
 .open-door {
   display: flex;
