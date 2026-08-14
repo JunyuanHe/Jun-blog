@@ -26,7 +26,7 @@ where $x_{<t}=x_1,\dots,x_{t-1}$.
 
 Modern language models such as GPT and LLaMA typically use the **decoder-only Transformer**, because it naturally matches autoregressive prediction.
 
-![Architecture of a decoder-only transformer language model. Source of figure: Language Models from Scratch, Stanford CS336 course notes](Transformer-decoder.png)
+![Architecture of a decoder-only transformer language model. Source of figure: Language Models from Scratch, Stanford CS336 course notes](./Transformer-decoder.png)
 
 ### 1.1 Input representation: token embedding + position embedding
 

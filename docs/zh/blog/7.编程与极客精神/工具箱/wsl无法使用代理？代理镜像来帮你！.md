@@ -28,7 +28,7 @@ tags:
 将网络模式从 NAT 更改为 Mirrored。
 - 重启 WSL 生效。（重启方法：在 Powershell 中，输入 `wsl --shutdown`，然后重新打开 WSL 即可。）
 
-![WSL Settings](wsl-settings.png)
+![WSL Settings](./wsl-settings.png)
 
 
 至此，上述问题已有了完美的解决方案。感谢 Microsoft 团队的努力。

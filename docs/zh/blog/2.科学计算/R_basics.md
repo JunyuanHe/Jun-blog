@@ -110,9 +110,9 @@ Use the `replicate` command generates many samples so that we can perform a simu
 
 > **Problem (matching problem)** Consider a well-shuffled deck of n cards, labeled 1 through n. You flip over the cards one by one, saying the number 1 through n as you do so. You win the game if, at some point, the number you say aloud is the same as the number on the card being flipped over. What is the probability of winning?
 
-![alt text](image-20210219150750127.png)
+![alt text](./image-20210219150750127.png)
 
-![alt text](image-20210219150830674.png) 
+![alt text](./image-20210219150830674.png) 
 
 Simulation goes as follows
 

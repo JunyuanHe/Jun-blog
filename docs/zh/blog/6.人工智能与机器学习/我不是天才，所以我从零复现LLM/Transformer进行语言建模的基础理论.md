@@ -30,7 +30,7 @@ $$
 
 Transformer的结构有许多变种，现代LLM中常用的decoder-only transformer的一个常见的版本如下图所示：
 
-![Architecture of a decoder-only transformer language model. <br> Source of figure: Language Models from Scratch, Stanford CS336 course notes](Transformer-decoder.png)
+![Architecture of a decoder-only transformer language model. <br> Source of figure: Language Models from Scratch, Stanford CS336 course notes](./Transformer-decoder.png)
 
 ### 1.1 输入表示：Token Embedding + Position Embedding
 

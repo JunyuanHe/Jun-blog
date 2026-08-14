@@ -93,5 +93,5 @@ The `replicate` command is useful for Monte Carlo simulation.
 
 > **Problem (matching problem)** Consider a shuffled deck of `n` cards labeled 1 through `n`. You flip them one by one while saying 1 through `n` aloud. You win if the spoken number matches the card being turned over at any point. What is the probability of winning?
 
-![alt text](image-20210219150750127.png)
-![alt text](image-20210219150830674.png)
+![alt text](./image-20210219150750127.png)
+![alt text](./image-20210219150830674.png)

@@ -25,6 +25,6 @@ By default, WSL 2 uses NAT networking. The message above shows that WSL now supp
 - Restart WSL for the change to take effect  
   (run `wsl --shutdown` in PowerShell, then open WSL again)
 
-![WSL Settings](wsl-settings.png)
+![WSL Settings](./wsl-settings.png)
 
 At that point, the problems above are basically solved.

@@ -33,7 +33,7 @@ A **database management system (DBMS)** is the software layer that manages datab
 
 A **data model** is an abstraction used to describe data, the relationships among data, and the operations applied to them.
 
-![Data models](数据模型.png)
+![Data models](./数据模型.png)
 
 The conceptual model most commonly used in database design is the **Entity-Relationship (ER) model**.
 
@@ -43,7 +43,7 @@ Its three core elements are:
 - **attribute**
 - **relationship**
 
-![ER Diagram](ER图.png)
+![ER Diagram](./ER图.png)
 
 ## The relational model
 

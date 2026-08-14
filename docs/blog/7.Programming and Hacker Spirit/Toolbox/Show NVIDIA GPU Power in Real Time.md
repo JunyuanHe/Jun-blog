@@ -8,12 +8,12 @@ People often say GPUs consume a lot of power, but how much exactly? Sometimes we
 
 I use an NVIDIA GPU, and NVIDIA actually provides a good official tool for this. When you install the NVIDIA graphics driver, the NVIDIA App is usually installed as well. If it is already installed, press `Ctrl + Alt + Z`, and a sidebar will appear on the left side of the screen.
 
-![NVIDIA App side panel](nvidia-side-panel.png)
+![NVIDIA App side panel](./nvidia-side-panel.png)
 
 In the **Statistics** tab, turn on “Show statistics in overlay,” and GPU-related information will appear on screen.
 
-![NVIDIA statistics](nvidia-statistics.png)
+![NVIDIA statistics](./nvidia-statistics.png)
 
 You can also customize the statistics view to show the metrics you actually care about. Mine looks like this:
 
-![NVIDIA statistics view](nvidia-statistics-view.png)
+![NVIDIA statistics view](./nvidia-statistics-view.png)
