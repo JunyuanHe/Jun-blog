@@ -1,5 +1,5 @@
 ---
-title: Flask quick start guide
+title: Flask 快速入门
 createTime: 2026/08/14 10:37:04
 permalink: /blog/4wu91552/
 ---
